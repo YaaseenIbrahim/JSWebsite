@@ -1,0 +1,26 @@
+.snapper {
+    scroll-snap-align: start;
+}
+
+/* Some Quick classes for usually re-used things */
+.flex-parent {
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+}
+
+.flex-parent-col {
+    display: flex;
+    justify-content: space-around;                          
+    align-items: center;
+    flex-direction: column;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
