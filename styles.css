@@ -1,12 +1,15 @@
 .snapper {
     scroll-snap-align: start;
 }
-
+*{
+    margin: 0;
+}
 /* Some Quick classes for usually re-used things */
 .flex-parent {
     display: flex;
     justify-content: space-around;    
     align-items: center;
+    border: 1px solid black;
 }
 
 .flex-parent-col {
