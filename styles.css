@@ -1,20 +1,24 @@
-.snapper {
-    scroll-snap-align: start;
-}
-*{
+@import url(fonts.css);
+@import url(colors.css);
+@import url(events.css);
+/* CSS file to add classes that will be used in all HTML pages, like Navbar, Footer */
+
+* {
     margin: 0;
+    color: black;
+    font-family: Outfit, Faruma;
 }
+
 /* Some Quick classes for usually re-used things */
 .flex-parent {
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
 }
 
 .flex-parent-col {
     display: flex;
-    justify-content: space-around;                          
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -26,4 +30,78 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+/* ----------------------- */
+/* Navbar */
+#navbar {
+    background-color: var(---lightred);
+    display: flex;
+}
+
+.navbar__alltext {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar__linksholder {
+    display: flex;
+    margin-right: 2rem;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+}
+
+.navbar__logocontainer {
+    display: flex;
+    justify-content: left;
+    width: 140%;
+}
+
+.navbar__logo {
+    text-decoration: none;
+}
+
+.navbar__logo#--image {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 10px;
+}
+
+.navbar__logo.--text {
+    justify-content: center;
+    flex-basis: 20%;
+}
+
+.navbar__links {
+    width: 7rem;
+    position: relative;
+}
+
+
+.navbar__links::before {
+    content: "";
+    bottom: 0;
+    width: 50%;
+    border-bottom: 4px solid rgb(66, 66, 66);
+    position: absolute;
+    border-radius: 100px;
+    transition: width ease-out 0.25s;
+}
+
+.navbar__links:hover::before {
+    width: 100%;
+}
+
+.navbar__links::after {
+    content: "";
+    bottom: 0;
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    transition: ease-out 0.25s;
+}
+
+.navbar__links:hover::after {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.13);
 }

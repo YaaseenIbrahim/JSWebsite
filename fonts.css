@@ -1,0 +1,20 @@
+/* CSS file to import in any fonts that we are adding */
+
+@font-face {
+    font-family: Faruma;
+    src: url(Fonts/Faruma.otf);
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(Fonts/Outfit/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: Outfit Bold;
+    src: url(Fonts/Outfit/Outfit-Bold.ttf);
+}
+@font-face {
+    font-family: Outfit Semibold;
+    src: url(Fonts/Outfit/Outfit-SemiBold.ttf);
+}
