@@ -53,9 +53,7 @@
 
 /* ------------------------------------------------- */
 
-#infoSection{
-margin:0 7.5%;
-}
+
 .quickfacts__rectangle{
     background-color: white;
     height: 20rem;
@@ -63,6 +61,7 @@ margin:0 7.5%;
     justify-content: center;
     transform: translateY(-7.5rem);
     box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+    margin: 0 7.5%;
 }
 
 .quickfact__holder{
@@ -86,4 +85,10 @@ margin:0 7.5%;
 }
 .quickfact__holder.--textholder :nth-child(4){
     margin-right: 30px;
+}
+
+/* -------------------------------------------------- */
+
+#infoSection {
+    margin: 0 7.5%;
 }
