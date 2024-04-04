@@ -18,3 +18,11 @@
     font-family: Outfit Semibold;
     src: url(Fonts/Outfit/Outfit-SemiBold.ttf);
 }
+@font-face {
+    font-family: Outfit Light;
+    src: url(Fonts/Outfit/Outfit-Light.ttf);
+}
+@font-face {
+    font-family: Outfit Thin;
+    src: url(Fonts/Outfit/Outfit-Thin.ttf);
+}
