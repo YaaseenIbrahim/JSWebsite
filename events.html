@@ -4,8 +4,12 @@
 <head>
     <title>Jalaluddin School</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main-event-section.css">
+    <link rel="stylesheet" href="latest-event-section.css">
+    <link rel="stylesheet" href="slider-animation.css">
     <link rel="icon" href="Images/Logos/School Logo.png" type="icon.png">
     <meta charset="UTF-8">
+    <script src="slider.js" defer></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -24,24 +28,186 @@
             <a href="#" class="navbar__links navbar__alltext flex-parent --news">News</a>
             <a href="#" class="navbar__links navbar__alltext flex-parent --history">History</a>
             <a href="#" class="navbar__links navbar__alltext flex-parent --slc">SLC</a>
-            <a href="#" class="navbar__links navbar__alltext flex-parent --events">Events</a>
+            <a href="events.html" class="navbar__links navbar__alltext flex-parent --events">Events</a>
 
         </div>
     </nav>
-    <section id="eventshowcaseSection flex-parent">
-        <div class="mainevent flex-parent-col">
-            <div class="mainevent__title"> Interhouse Athletics Championship</div>
-            <div class="mainevent__image"></div>
-            <div class="mainevent__date">22 September - 29 September</div>
-            <div class="mainevent__description">Ruby, Emerald, Sapphire, Topaz go head to head in Athletics! Stadium at 4pm. Visit for PTA Canteen, and the thrill of victory!</div>
+    <section id="maineventSection">
+        <a class=" slider__button --prev" onclick="prevSlide()">&#10094;</a>
 
+        <div class="slideshow-container flex-parent-col ">
 
+            <div class="mainevent flex-parent-col mySlides fade">
+                <div class="mainevent__title --homepage"> Earth Hour Celebration</div>
+                <div class="mainevent__date --homepage ">22 March 2024</div>
+                <div class="mainevent__imageholder --upcoming">
+                    <img src="Images/image1.jpg" class="mainevent__image --homepage">
+                </div>
 
+            </div>
+            <div class="mainevent flex-parent-col mySlides fade">
+                <div class="mainevent__title --homepage"> World Down Syndrome Day</div>
+                <div class="mainevent__date --homepage">21 March 2024</div>
+                <div class="mainevent__imageholder --ongoing">
+                    <img src="Images/image2.jpg" class="mainevent__image --homepage">
+                </div>
+            </div>
 
+            <div class="mainevent flex-parent-col mySlides fade">
+                <div class="mainevent__title --homepage "> Interhouse Athletics Championship</div>
+                <div class="mainevent__date --homepage">22 September - 29 September</div>
+                <div class="mainevent__imageholder --finished">
+                    <img src="Images/image3.jpg" class="mainevent__image --homepage">
+                </div>
+
+            </div>
+            <div class="mainevent flex-parent-col mySlides fade">
+                <div class="mainevent__title --homepage "> Report Book Distribution</div>
+                <div class="mainevent__date --homepage">27 March 2024</div>
+                <div class="mainevent__imageholder --finished">
+                    <img src="Images/image4.jpg" class="mainevent__image --homepage">
+                </div>
+
+            </div>
+            <div class="mainevent flex-parent-col mySlides fade">
+                <div class="mainevent__title --homepage "> World Oceans Day</div>
+                <div class="mainevent__date --homepage">6 June 2024</div>
+                <div class="mainevent__imageholder --upcoming">
+                    <img src="Images/image5.png" class="mainevent__image --homepage">
+                </div>
+
+            </div>
+            <div class="dots__container">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+
+            </div>
         </div>
+        <a class=" slider__button --next" onclick="nextSlide()">&#10095;</a>
+
+
 
     </section>
+    <section id="latesteventSection">
+        <div class="latestevent__title">Latest Events</div>
+        <div class="lines__container">
+            <div class="line --outerlines"></div>
+            <div class="line --middleline"></div>
+            <div class="line --outerlines"></div>
+        </div>
+        <div class="filters__container">
+            <span class="filters__title">Filters:</span>
+            <span class="filters__label allfilterbaritems noselect --finished">Finished</span>
+            <span class="filters__label allfilterbaritems noselect --ongoing">Ongoing</span>
+            <span class="filters__label allfilterbaritems noselect --upcoming">Upcoming</span>
+            <span>
+                <input type="search" class="latestevent__searchbar allfilterbaritems" placeholder="Search...">
+            </span>
+            <span>
+                <img src="Images/Icon svgs/Filter.svg" alt="Settings" class="filters__settings">
+            </span>
+        </div>
 
+        <div class="allevents__container">
+            <div class="event__card --finished flex-parent-col">
+                <img src="Images/image6.jpg" alt="Event Image" class="event__image">
+                <div class="event__textcontainer">
+                    <div class="event__title">Icecream Day</div>
+                    <div class="event__date">10 August 2024</div>
+                </div>
+            </div>
+            <div class="event__card --upcoming flex-parent-col">
+                <img src="Images/image4.jpg" alt="Event Image" class="event__image">
+                <div class="event__textcontainer ">
+                    <div class="event__title">Grade 10, 11 and 12 Report file Distribution Ceremony </div>
+                    <div class="event__date">27 March 2024</div>
+                </div>
+            </div>
+            <div class="event__card --ongoing flex-parent-col">
+                <img src="Images/image6.jpg" alt="Event Image" class="event__image">
+                <div class="event__textcontainer ">
+                    <div class="event__title">Icecream Day</div>
+                    <div class="event__date">10 August 2024</div>
+                </div>
+            </div>
+            <div class="event__card --ongoing flex-parent-col">
+                <img src="Images/image5.png " alt="Event Image" class="event__image">
+                <div class="event__textcontainer">
+                    <div class="event__title">Worlds international oceans day</div>
+                    <div class="event__date">10 August 2024</div>
+                </div>
+            </div>
+            <div class="event__card --ongoing --yl flex-parent-col">
+                <img src="Images/image5.png " alt="Event Image" class="event__image">
+                <div class="event__textcontainer">
+                    <div class="event__title">Worlds international oceans day</div>
+                    <div class="event__date">10 August 2024</div>
+                </div>
+            </div>
+            <div class="event__card --ongoing flex-parent-col --scout">
+                <img src="Images/image5.png " alt="Event Image" class="event__image">
+                <div class="event__textcontainer">
+                    <div class="event__title">Worlds scout day</div>
+                    <div class="event__date">10 August 2024</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><br>
+    </section>
 </body>
 
 </html>

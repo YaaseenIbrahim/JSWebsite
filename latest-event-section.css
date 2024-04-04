@@ -1,0 +1,188 @@
+#latesteventSection {
+    margin: 2.5rem 7.5% 0 7.5%;
+}
+
+.latestevent__title {
+    font-size: 3rem;
+    font-family: Outfit Bold;
+    text-align: center;
+}
+
+.lines__container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line {
+    background: #808080;
+    border-radius: 3.80952px;
+    height: 10px;
+}
+
+.line.--middleline {
+    width: 45%;
+}
+
+.line.--outerlines {
+    width: 20%;
+}
+
+.filters__container {
+    margin: 2rem;
+    justify-content: left;
+}
+
+.allfilterbaritems {
+    border-radius: 33px;
+    width: auto;
+    cursor: pointer;
+    border: none;
+    overflow-x: hidden;
+
+    text-align: center;
+}
+
+.filters__title {
+    font-size: 1.2rem;
+    font-family: Outfit Semibold;
+    margin-right: 0.8rem;
+}
+
+.filters__label {
+    margin: 0 0.2rem;
+    padding: 5px 20px;
+}
+
+.filters__label.--finished {
+    background-color: var(---finished);
+}
+
+.filters__label.--ongoing {
+    background-color: var(---ongoing);
+}
+
+.filters__label.--upcoming {
+    background-color: var(---upcoming);
+}
+
+.filters__settings {
+    width: 2rem;
+    position: absolute;
+    margin-top: -3.6px;
+    margin-left: 0.6rem;
+    cursor: pointer;
+}
+
+
+.latestevent__searchbar {
+    padding: 5px 100px;
+    float: right;
+    background-color: #e0e0e0;
+    font-family: Outfit Light;
+    margin-top: -1px;
+}
+
+.searchbar__defaulttext {
+    font-family: Outfit Light;
+}
+
+.searchbar__icon {
+    float: right;
+}
+
+.allevents__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+    grid-template-rows: repeat(auto, auto);
+    justify-content: center;
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    margin-top: 4rem;
+    gap: 30px;
+}
+
+.event__card {
+    width: 250px;
+    border-radius: 25px;
+    transition: all ease-in-out 0.25s;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    min-height: 400px;
+    text-decoration: none;
+}
+
+.event__card::before {
+    scale: 0.1;
+    position: absolute;
+}
+
+.event__card.--scout::before {
+    content: url('Images/Logos/ScoutMV.png');
+    bottom: 215px;
+    right: 70px;
+}
+
+.event__card.--yl::before {
+    content: url('Images/Logos/YL.png');
+    bottom: 217.5px;
+    right: 68px;
+}
+
+.event__card.--ongoing {
+    border: 2px solid var(---ongoing);
+}
+
+.event__card.--finished {
+    border: 2px solid var(---finished);
+}
+
+.event__card.--upcoming {
+    border: 2px solid var(---upcoming);
+}
+
+.event__image {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 1rem;
+}
+
+.event__textcontainer {
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.event__title {
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+    font-family: Outfit Bold;
+    width: 100%;
+}
+
+.event__date {
+    font-family: Outfit Light;
+    font-size: 0.9rem;
+    color: #606060;
+}
+
+.event__card:hover {
+    scale: 105%;
+}
+
+.event__card.--finished:hover {
+    box-shadow: 0px 0px 20px var(---finished);
+}
+
+.event__card.--ongoing:hover {
+    box-shadow: 0px 0px 20px var(---ongoing);
+}
+
+.event__card.--upcoming:hover {
+    box-shadow: 0px 0px 20px var(---upcoming);
+}
