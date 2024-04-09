@@ -104,3 +104,50 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.13);
 }
+/* New Navbar */
+.banner__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__logo {
+    width: 11rem;
+    padding: 1rem;
+}
+
+.banner__linksholder {
+    margin: auto;
+}
+
+.banner__links {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    margin: 0 2.5rem;
+    position: relative;
+}
+
+.banner__links:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width ease-in-out 0.25s;
+}
+
+.banner__links:hover:before {
+    width: 100%;
+}
+
+.banner__socialsholder {
+    width: 11rem;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.banner__sociallinks {
+    margin: 0 10px;
+}
