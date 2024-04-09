@@ -1,42 +1,65 @@
 // JS for the scrolling in each events page
 
-const ele = document.getElementById('container');
-ele.scrollTop = 100;
-ele.scrollLeft = 150;
+const slider = document.querySelector('#scrollable-bar');
+let isDown = false;
+let startX;
+let scrollLeft;
 
-let pos = { top: 0, left: 0, x: 0, y: 0 };
+slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.style.cursor = 'grabbing'
+    slider.style.scrollBehavior = 'auto'
 
-const mouseDownHandler = function (e) {
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.style.cursor = 'grab'
+        return
+    });
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.style.cursor = 'grab'
+        return
+    });
+});
 
-    ele.style.cursor = 'grabbing';
-    ele.style.userSelect = 'none';
 
-    pos = {
-        // The current scroll
-        left: ele.scrollLeft,
-        top: ele.scrollTop,
-        // Get the current mouse position
-        x: e.clientX,
-        y: e.clientY,
-    };
+slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2;
+    slider.scrollLeft = scrollLeft - walk;
+});
 
-    document.addEventListener('mousemove', mouseMoveHandler);
-    document.addEventListener('mouseup', mouseUpHandler);
-};
+function mouseMoveRight() {
+    slider.style.scrollBehavior = 'smooth'
+    slider.scrollLeft += 150;
+}
 
-const mouseMoveHandler = function (e) {
-    // How far the mouse has been moved
-    const dx = e.clientX - pos.x;
-    const dy = e.clientY - pos.y;
+function mouseMoveLeft() {
+    slider.style.scrollBehavior = 'smooth'
+    slider.scrollLeft -= 150;
 
-    // Scroll the element
-    ele.scrollTop = pos.top - dy;
-    ele.scrollLeft = pos.left - dx;
-};
-const mouseUpHandler = function () {
-    document.removeEventListener('mousemove', mouseMoveHandler);
-    document.removeEventListener('mouseup', mouseUpHandler);
+}
 
-    ele.style.cursor = 'grab';
-    ele.style.removeProperty('user-select');
-};
+// -------------------------------
+
+var modalArea = document.getElementById("modal__area");
+var images = document.querySelectorAll(".gallery__image");
+var modalImg = document.getElementById("modal-image");
+
+images.forEach(image => {
+    image.onclick = function () {
+        modalArea.style.display = "flex";
+        modalImg.src = this.src;
+    }
+
+});
+
+var span = document.getElementsByClassName("close__button")[0];
+
+span.onclick = function () {
+    modalArea.style.display = "none";
+}
