@@ -1,0 +1,227 @@
+/* CSS for each individual events page */
+:root {
+    ---backgroundImg: url('Images/Eachevents/upshift.png');
+}
+
+#eventfocusSection {
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/Eachevents/upshift.png');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 4px 32.8px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.focusevent__text {
+    color: white;
+    text-align: center;
+}
+
+.focusevent__title {
+    font-family: Outfit Bold;
+    font-size: 4vw;
+    margin-top: 20vh;
+}
+
+.focusevent__date {
+    font-size: 1.1vw;
+    margin-bottom: 8vh;
+}
+
+
+.focusevent__label {
+    border-radius: 5px;
+    padding: 1vh 2vw;
+    width: 4vw;
+    margin: auto;
+    color: black;
+}
+
+.focusevent__label.--finished {
+    background-color: var(---finished);
+}
+
+.focusevent__label.--ongoing {
+    background-color: var(---ongoing);
+}
+
+.focusevent__label.--upcoming {
+    background-color: var(---upcoming);
+}
+
+.focusevent__description {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 40px;
+    padding: 2rem 1rem;
+    margin: 12vh 12.5% 0 12.5%;
+}
+
+/* ------------------------ */
+#eventdetailsSection {
+    margin: 2vh 7.5% 4vh 7.5%;
+}
+
+.quick-access-toolbar {
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.name-organizer__holder {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    min-width: fit-content;
+    border-right: 5px solid var(---linegray);
+    padding: 0.5rem 1rem;
+}
+
+.event__name {
+    font-family: Outfit Semibold;
+    font-size: 2vw;
+}
+
+.scrollable-bar {
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    cursor: grab;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    will-change: transform;
+    user-select: none;
+}
+
+.scrollable-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.album__quicklink {
+    text-decoration: none;
+    min-width: fit-content;
+    white-space: nowrap;
+}
+
+.scroll__button {
+    cursor: pointer;
+    align-self: center;
+    border-radius: 50%;
+    padding: 3px 15px 5px 15px;
+    color: black;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    transition: 0.25s ease;
+    user-select: none;
+    background-color: rgba(223, 223, 223, 0.8);
+
+}
+
+.scroll__button:active {
+    background-color: var(---linegray);
+}
+
+.horizontallines__container {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line {
+    height: 6px;
+    background-color: var(---linegray);
+    border-radius: 20px
+}
+
+.line.--middleline {
+    width: 40%;
+}
+
+.line.--outerlines {
+    width: 25%;
+}
+
+.album__description {
+    text-align: justify;
+    margin: 5vh 15%;
+}
+
+.album__title {
+    font-family: Outfit Semibold;
+    font-size: 1.6vw;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.album__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    justify-content: center;
+    grid-auto-flow: dense;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    gap: 30px;
+}
+
+.gallery__image {
+    width: 100%;
+    transition: all ease-in 0.25s;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery__image:hover {
+    background-color: black;
+    opacity: 0.8;
+}
+
+#modal__area {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modal-image {
+    width: 80%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.close__button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close__button:hover,
+.close__button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.backtotop__button {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background-color: rgb(119, 16, 16);
+    color: white;
+    display: inline-block;
+    text-align: center;
+
+}
