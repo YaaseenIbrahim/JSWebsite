@@ -109,7 +109,11 @@
     display: flex;
     justify-content: space-between;
 }
+.banner__nav.--events{
+   
+        background: linear-gradient(180deg, #EE5A5A 0%, #E43A3A 36%, #D00D0D 94%);
 
+}
 .banner__logo {
     width: 11rem;
     padding: 1rem;

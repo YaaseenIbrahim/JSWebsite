@@ -54,6 +54,11 @@ images.forEach(image => {
     image.onclick = function () {
         modalArea.style.display = "flex";
         modalImg.src = this.src;
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                modalArea.style.display = "none";
+            }
+        });
     }
 
 });
