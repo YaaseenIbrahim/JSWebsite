@@ -1,0 +1,803 @@
+.image-container{
+    width: 500px;
+    height: 330px;
+    /* border: 2px solid black; */
+    margin-top:90px;
+    margin-left: 90px;
+    float: left;
+}
+
+.main-img{
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 38px;
+}
+
+.main-title-container{
+    float: left;
+    display: flex;
+    /* border: 2px solid black; */
+    height: auto;
+    width: auto;
+    /* position: relative; left: 20px; */
+    margin-top: 90px;
+    font-size: x-large;
+    margin-left: 20px;
+}
+
+.main-title{
+    font-family: outfit bold;
+
+}
+
+.main-title-author-container{
+    display: inline-block;
+    /* border: 2px solid black; */
+    height: auto;
+    width: auto;
+    margin-top: 136px;
+    position: relative; right: 330px;
+    /* margin-left: 20px; */
+}
+
+.main-title-author{
+    color: #606060;
+}
+
+.main-title-date-container{
+    display: inline-block;
+    /* border: 2px solid black; */
+    height: auto;
+    width: auto;
+    margin-top: 136px;
+    position: relative; right: 320px;
+    margin-left: 6px;
+}
+
+.main-title-date{
+    color: #606060;
+}
+
+.main-title-desc-container{
+    text-align: justify;
+    display: inline-block;
+    width: 500px;
+    height: auto;
+    /* border: 2px solid black; */
+    margin-top: 15px;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.main-title-desc{
+    font-size: 17px;
+    color:#606060;
+}
+
+.breaker{
+position: relative;
+height: 8px;
+margin-top: 40px;
+margin-left: 40px;
+margin-right: 40px;
+background-color: #808080;
+border-radius: 4.19px;
+}
+
+.middle-school{
+    margin-top:16px;
+    height: 36px;
+    width: 123px;
+    border-radius: 33px;
+    border: none;
+    background-color: #8ecae6;
+    font-weight: 650;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-left: 40px;
+}
+
+.lower-secondary{
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top:16px;
+    height: 36px;
+    width: autopx;
+    border-radius: 33px;
+    border: none;
+    background-color: #ff8fab;
+    font-weight: 650;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-left: 10px; 
+}
+
+.higher-secondary{
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top:16px;
+    height: 36px;
+    width: autopx;
+    border-radius: 33px;
+    border: none;
+    background-color: #c7d24b;
+    font-weight: 650;
+    letter-spacing: 1px;
+    color: #000000;
+    margin-left: 10px; 
+}
+
+.featured-container{
+    display: block;
+    /* border: 2px solid black; */
+    height: 36px;
+    width: auto;
+    margin-top: 22px;
+    margin-left: 40px;
+}
+
+.featured{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #351e00;
+}
+
+.feature-underline{
+    /* border: 2px solid black; */
+    height: 5px;
+    width: 105px;
+    border-radius: 10px;
+    background-color: #c06000;
+    margin-left: 40px;
+
+}
+
+.container-1{
+    /* border: 2px solid black; */
+    height: 338px;
+    margin-top:22px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+
+.card-1{
+    /* border: 3px solid rgb(62, 35, 35); */
+    float: left;
+    /* border: 2px solid yellow; */
+    height: 100%;
+    width: 250px;
+    margin-left: 30px;
+    background-color:#f5d3d8 ;
+    border-radius: 15px;
+}
+
+.card-1-img-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;
+
+}
+
+.card-1-img{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;
+}
+
+/* .card-1-button{
+    margin-left:25px;
+    height: 36px;
+    width: 123px;
+    border-radius: 33px;
+    border: none;
+    background-color: #8ecae6;
+    font-weight: 650;
+    letter-spacing: 1px;
+    color: #000000;
+    position: relative; top: 4px;
+
+} */
+
+.card-1-text-container{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large;
+
+}
+
+.card-1-author-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;
+}
+
+.card-1-author{
+    color: #606060;
+    font-size: medium;
+}
+
+.card-2{
+    border-radius: 15px;
+    background-color:#f5d3d8 ;
+    float: left;
+    /* border: 2px solid pink; */
+    height: 100%;
+    width: 250px;
+    margin-left: 35px;
+}
+
+.card-2-img-container{
+        /* border: 2px solid black; */
+        height: 65%;
+        margin-left: 18px;
+        margin-top: 18px;
+        margin-right: 18px;
+}
+
+.card-2-img{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;
+}
+
+.card-2-text-container{
+        /* border: 2px solid black; */
+        margin-left:18px;
+        margin-right: 18px;
+        position: relative; top: 20px;
+        font-weight: 600;
+        font-size: large;
+}
+
+.card-2-author-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;
+}
+
+.card-2-author{
+    color: #606060;
+    font-size: medium;
+}
+
+.card-3{
+    border-radius: 15px;
+    background-color:#f5d3d8 ;
+    float: left;
+    /* border: 2px solid yellow; */
+    height: 100%;
+    width: 250px;
+    margin-left: 35px; 
+}
+
+.card-3-img-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;
+}
+
+.card-3-img{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;
+}
+
+.card-3-text-container{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large;
+
+}
+
+.card-3-author-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;
+
+}
+
+.card-3-author{
+    color: #606060;
+    font-size: medium;
+
+}
+
+.card-4{
+    border-radius: 15px;
+    background-color:#f5d3d8 ;
+    float: left;
+    /* border: 2px solid pink; */
+    height: 100%;
+    width: 250px;
+    margin-left: 35px; 
+}
+
+.card-4-img-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;
+}
+
+.card-4-img{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;    
+}
+
+.card-4-text-container{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large;
+
+}
+
+.card-4-author-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;
+}
+
+.card-4-author{
+    color: #606060;
+    font-size: medium;
+}
+
+.recent-works-container{
+    display: block;
+    /* border: 2px solid black; */
+    height: 36px;
+    width: auto;
+    margin-top: 22px;
+    margin-left: 40px;
+}
+
+.recent-works{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #351e00;
+}
+
+.recent-works-underline{
+    /* border: 2px solid black; */
+    height: 5px;
+    width: 125px;
+    border-radius: 10px;
+    background-color: #c06000;
+    margin-left: 40px;
+
+}
+
+.container-2{
+    /* border: 2px solid black; */
+    height: 338px;
+    margin-top:22px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+.card-2-1{
+    border-radius: 15px;
+    background-color:#bacd8e ;
+    float: left;
+    /* border: 2px solid pink; */
+    height: 100%;
+    width: 250px;
+    margin-left: 25px;     
+}
+
+.img-card-1-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;
+}
+
+.img-card-1{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;        
+}
+
+.text-card-1-container{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.author-card-1-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;    
+}
+.author-card-1{
+    color: #606060;
+    font-size: medium;    
+}
+
+.card-2-2{
+    border-radius: 15px;
+    background-color:#bacd8e ;
+    float: left;
+    /* border: 2px solid pink; */
+    height: 100%;
+    width: 250px;
+    margin-left: 35px;
+
+}
+
+.img-card-2-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;
+
+}
+
+.img-card-2{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;   
+}
+
+.text-card-2-container{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large;    
+}
+
+.author-card-2-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;    
+}
+
+.author-card-2{
+    color: #606060;
+    font-size: medium;      
+}
+
+.card-2-3{
+    border-radius: 15px;
+    background-color:#bacd8e ;
+    float: left;
+    /* border: 2px solid yellow; */
+    height: 100%;
+    width: 250px;
+    margin-left: 35px; 
+}
+
+.image-card-3-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;   
+}
+
+.image-card-3{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;   
+
+}
+
+.text-card-3-container{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large; 
+
+}
+
+.author-card-3-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;       
+}
+
+.author-card-3{
+    color: #606060;
+    font-size: medium;       
+}
+
+
+.card-2-4{
+    border-radius: 15px;
+    background-color:#bacd8e ;
+    float: left;
+    /* border: 2px solid pink; */
+    height: 100%;
+    width: 250px;
+    margin-left: 35px; 
+}
+
+.img-card-4-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;       
+}
+
+.img-card-4{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;   
+    
+}
+
+.text-card-4{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large; 
+}
+
+.author-card-4-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;        
+}
+
+.author-card-4{
+    color: #606060;
+    font-size: medium; 
+}
+
+.container-3{
+    /* border: 2px solid black; */
+    height: 338px;
+    margin-top:28px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.card-2-5{
+    border-radius: 15px;
+    background-color:#bacd8e ;
+    float: left;
+    /* border: 2px solid pink; */
+    height: 100%;
+    width: 250px;
+    margin-left: 25px;    
+}
+
+.image-card-5-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;   
+}
+
+.image-card-5{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;   
+        
+}
+
+.text-card-5-container{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large;     
+}
+
+.author-card-5-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;  
+
+}
+
+.author-card-5{
+    color: #606060;
+    font-size: medium;     
+}
+
+.card-2-6{
+    border-radius: 15px;
+    background-color:#bacd8e ;
+    float: left;
+    /* border: 2px solid pink; */
+    height: 100%;
+    width: 250px;
+    margin-left: 35px;
+
+}
+
+.image-card-6-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;      
+}
+
+.image-card-6{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;       
+}
+
+.text-card-6-container{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large;      
+}
+
+.author-card-6-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;  
+
+}
+
+.author-card-6{
+    color: #606060;
+    font-size: medium;  
+
+}
+
+.card-2-7{
+    border-radius: 15px;
+    background-color:#bacd8e ;
+    float: left;
+    /* border: 2px solid yellow; */
+    height: 100%;
+    width: 250px;
+    margin-left: 35px; 
+}
+
+.image-card-7-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;   
+
+}
+
+.image-card-7{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;   
+
+}
+
+.text-card-7-container{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large;  
+
+}
+
+.author-card-7-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;  
+
+}
+
+.author-card-7{
+    color: #606060;
+    font-size: medium;  
+
+}
+
+.card-2-8{
+    border-radius: 15px;
+    background-color:#bacd8e ;
+    float: left;
+    /* border: 2px solid pink; */
+    height: 100%;
+    width: 250px;
+    margin-left: 35px; 
+
+}
+
+.image-card-8-container{
+    /* border: 2px solid black; */
+    height: 65%;
+    margin-left: 18px;
+    margin-top: 18px;
+    margin-right: 18px;   
+
+}
+
+.image-card-8{
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    display: cover;  
+
+}
+
+.text-card-8-container{
+    /* border: 2px solid black; */
+    margin-left:18px;
+    margin-right: 18px;
+    position: relative; top: 20px;
+    font-weight: 600;
+    font-size: large;      
+}
+
+.author-card-8-container{
+    /* border: 2px solid black; */
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 20px;  
+}
+
+.author-card-8{
+    color: #606060;
+    font-size: medium;      
+}
