@@ -36,11 +36,9 @@
 
 .allfilterbaritems {
     border-radius: 33px;
-    width: auto;
     cursor: pointer;
     border: none;
     overflow-x: hidden;
-
     text-align: center;
 }
 
@@ -77,7 +75,7 @@
 
 
 .latestevent__searchbar {
-    padding: 5px 100px;
+    padding: 5px 60px;
     float: right;
     background-color: #e0e0e0;
     font-family: Outfit Light;
@@ -104,7 +102,11 @@
 }
 
 .event__card {
-    width: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 25px;
     transition: all ease-in-out 0.25s;
     cursor: pointer;
@@ -145,16 +147,14 @@
 
 .event__image {
     width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 20px 20px 0 0;
-    margin-bottom: 1rem;
 }
 
 .event__textcontainer {
-    width: 100%;
-    margin-bottom: 2rem;
+    margin: 1rem 5px 2rem 5px;
     text-align: center;
 }
 
@@ -185,4 +185,205 @@
 
 .event__card.--upcoming:hover {
     box-shadow: 0px 0px 20px var(---upcoming);
+}
+
+/* Mobile */
+
+.filters__container.--mobile {
+    display: none;
+    gap: 1rem;
+}
+
+.filterbuttons__holder {
+    width: 100%;
+    gap: 1rem;
+}
+
+.search-settings__holder {
+    width: 100%;
+}
+
+.filters__settings.--mobile {
+    position: static;
+}
+
+.latestevent__searchbar.--mobile {
+    padding: 5px;
+    margin-right: 1rem;
+    width: 100%;
+}
+
+
+@media (max-width:985px) {
+    .filters__title {
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
+    }
+
+    .filters__label {
+        margin: 0 0.1rem;
+        padding: 4px 15px;
+        font-size: 1rem;
+    }
+
+    .filters__settings {
+        width: 1.6rem;
+        margin-top: -2.3px;
+        margin-left: 0.4rem;
+    }
+
+    .latestevent__searchbar {
+        padding: 5px 20px;
+        margin-top: -1px;
+    }
+}
+
+@media (max-width:970px) {
+    .allevents__container {
+        grid-template-columns: repeat(auto-fill, minmax(225px, 225px));
+    }
+
+    .event__card {
+        min-height: 350px;
+    }
+
+    .event__title {
+        font-size: 1.2rem;
+    }
+
+
+    .event__textcontainer {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width:885px) {
+    .allevents__container {
+        grid-template-columns: repeat(auto-fill, minmax(210px, 210px));
+        gap: 20px;
+    }
+
+    .event__card {
+        min-height: 375px;
+    }
+
+    .event__title {
+        font-size: 1.2rem;
+    }
+
+    .event__textcontainer {
+        margin: 0.8rem 4px;
+    }
+
+    .event__card:hover {
+        scale: 102%;
+    }
+
+    .event__card.--finished:hover {
+        box-shadow: 0px 0px 10px var(---finished);
+
+    }
+
+    .event__card.--ongoing:hover {
+        box-shadow: 0px 0px 10px var(---ongoing);
+    }
+
+    .event__card.--upcoming:hover {
+        box-shadow: 0px 0px 10px var(---upcoming);
+    }
+}
+
+@media (max-width:820px) {
+
+    .filters__container {
+        display: none;
+    }
+
+    .filters__container.--mobile {
+        display: flex;
+    }
+
+    .filters__label {
+        padding: 5px 0;
+        width: 100%;
+    }
+}
+
+@media (max-width:810px) {
+    .allevents__container {
+        grid-template-columns: repeat(auto-fill, minmax(230px, 230px));
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+
+    .event__card {
+        min-height: 400px;
+    }
+}
+
+@media (max-width:575px) {
+    #latesteventSection {
+        margin: 2.5rem 10px 0 10px;
+    }
+
+    .allevents__container {
+        /* grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    .event__card {
+        min-height: 350px;
+    }
+
+    .event__title {
+        font-size: 1.1rem;
+    }
+}
+
+/* XS */
+@media (max-width:430px) {
+    #latesteventSection {
+        margin: 2.5rem 0 0 0;
+    }
+
+    .filters__label {
+        padding: 3px 15px;
+        font-size: 0.9rem;
+    }
+
+    .filterbuttons__holder {
+        width: 100%;
+        gap: 4%;
+    }
+
+    .latestevent__title {
+        font-size: 2.25rem;
+    }
+
+    .filters__container.--mobile {
+        margin: 2rem 10px 10px 10px;
+    }
+
+    .allevents__container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+        gap: 10px;
+        margin: 3rem 10px 10px 10px;
+    }
+
+    .event__textcontainer {
+        margin-bottom: 0.7rem;
+        margin-top: 0.7rem;
+    }
+
+    .event__card {
+        min-height: 300px;
+    }
+
+    .event__title,
+    .event__date {
+        font-size: 4vw;
+    }
 }
