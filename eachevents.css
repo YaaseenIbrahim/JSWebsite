@@ -199,22 +199,7 @@
     object-fit: contain;
 }
 
-.close__button {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
 
-.close__button:hover,
-.close__button:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 .backtotop__button {
     text-decoration: none;

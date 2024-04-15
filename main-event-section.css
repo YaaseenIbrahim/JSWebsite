@@ -1,12 +1,14 @@
 /* CSS for the mainevents showcased in home page and each page */
 #maineventSection {
     width: 100%;
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
 }
+
+/* #maineventSection > * {
+    border: 1px solid blue;
+} */
 
 .mainevent {
     margin-top: 2rem;
@@ -14,13 +16,22 @@
 
 .mainevent__title {
     font-family: Outfit Bold;
+    text-align: center;
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+}
+
+.mainevent__date {
+    font-family: Outfit Semibold;
+    font-size: 1.2rem;
+    font-family: Outfit;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 .mainevent__image {
     position: relative;
     object-fit: cover;
+    object-position: center;
     width: 47.5vw;
     height: 25rem;
     border-radius: 45px;
@@ -28,10 +39,7 @@
     margin-bottom: 0.4rem;
 }
 
-.mainevent__date {
-    font-family: Outfit Semibold;
-    font-size: 1.2rem;
-}
+
 
 .mainevent__description {
     margin: 1rem 31% 0 31%;
@@ -43,53 +51,111 @@
     cursor: pointer;
 }
 
+.mainevent__imageholder:after {
+    content: '';
+    font-weight: bold;
+    top: 30px;
+    left: 30px;
+    width: auto;
+    height: 20px;
+    border-radius: 33px;
+    position: absolute;
+}
+
 .mainevent__imageholder.--ongoing::after {
     content: "Ongoing";
-    font-weight: bold;
-    top: 30px;
-    left: 30px;
-    width: auto;
     background: var(---ongoing);
-    height: 20px;
     padding: 5px 35px;
-    border-radius: 33px;
-    position: absolute;
 }
+
 .mainevent__imageholder.--upcoming::after {
     content: "Upcoming";
-    font-weight: bold;
-    top: 30px;
-    left: 30px;
-    width: auto;
     background: var(---upcoming);
-    height: 20px;
     padding: 5px 30px;
-    border-radius: 33px;
-    position: absolute;
 }
+
 .mainevent__imageholder.--finished::after {
     content: "Finished";
-    font-weight: bold;
-    top: 30px;
-    left: 30px;
-    width: auto;
     background: var(---finished);
-    height: 20px;
     padding: 5px 36px;
-    border-radius: 33px;
-    position: absolute;
-}
-/* CSS specifically for homepage */
-
-.mainevent__date.--homepage {
-    font-family: Outfit;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-}
-.mainevent__title.--homepage {
-    margin-bottom: 0;
-}
-.mainevent__image.--homepage{
-    margin-bottom: -4px;
 }
 
+
+
+
+/* Large */
+@media (max-width: 1060px) {
+    .mainevent__image {
+        width: 60vw;
+    }
+}
+
+/* Medium */
+@media (max-width: 900px) {
+    .mainevent__image {
+        width: 60vw;
+    }
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+    .mainevent__image {
+        width: 70vw;
+        height: 90vh;
+    }
+
+    .mainevent__title {
+        font-size: 1.8rem;
+    }
+
+    .mainevent__date {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .mainevent__imageholder:after {
+        top: 30px;
+        left: 30px;
+        height: 15px;
+        text-align: center;
+        position: absolute;
+        font-size: 0.8rem;
+    }
+
+    .mainevent__imageholder.--ongoing::after {
+        padding: 5px 20px;
+    }
+
+    .mainevent__imageholder.--upcoming::after {
+
+        padding: 5px 15px;
+    }
+
+    .mainevent__imageholder.--finished::after {
+
+        padding: 5px 21px;
+    }
+}
+
+/* XS */
+@media (max-width: 410px) {
+    .mainevent__imageholder:after {
+        top: 25px;
+        left: 25px;
+        height: 10px;
+        font-size: 0.8rem;
+    }
+
+    .mainevent__imageholder.--ongoing::after,
+    .mainevent__imageholder.--finished::after {
+        padding: 5px 15px;
+        padding-bottom: 10px;
+    }
+
+    .mainevent__imageholder.--upcoming::after {
+        padding: 5px 10px;
+        padding-bottom: 10px;
+    }
+
+
+}
