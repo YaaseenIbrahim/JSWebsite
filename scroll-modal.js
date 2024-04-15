@@ -44,7 +44,7 @@ function mouseMoveLeft() {
 
 }
 
-// -------------------------------
+// -------------------------------Modal
 
 var modalArea = document.getElementById("modal__area");
 var images = document.querySelectorAll(".gallery__image");
@@ -63,8 +63,3 @@ images.forEach(image => {
 
 });
 
-var span = document.getElementsByClassName("close__button")[0];
-
-span.onclick = function () {
-    modalArea.style.display = "none";
-}
