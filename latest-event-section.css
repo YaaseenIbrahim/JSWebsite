@@ -1,5 +1,5 @@
 #latesteventSection {
-    margin: 2.5rem 7.5% 0 7.5%;
+    margin: 2.5rem 7.5% 4rem 7.5%;
 }
 
 .latestevent__title {
@@ -170,22 +170,6 @@
     color: #606060;
 }
 
-.event__card:hover {
-    scale: 105%;
-}
-
-.event__card.--finished:hover {
-    box-shadow: 0px 0px 20px var(---finished);
-}
-
-.event__card.--ongoing:hover {
-    box-shadow: 0px 0px 20px var(---ongoing);
-}
-
-.event__card.--upcoming:hover {
-    box-shadow: 0px 0px 20px var(---upcoming);
-}
-
 /* Mobile */
 
 .filters__container.--mobile {
@@ -273,25 +257,27 @@
     .event__textcontainer {
         margin: 0.8rem 4px;
     }
+ 
+}
+@media (min-width:810px) {
+   
 
     .event__card:hover {
-        scale: 102%;
+        scale: 105%;
     }
 
     .event__card.--finished:hover {
-        box-shadow: 0px 0px 10px var(---finished);
-
+        box-shadow: 0px 0px 20px var(---finished);
     }
 
     .event__card.--ongoing:hover {
-        box-shadow: 0px 0px 10px var(---ongoing);
+        box-shadow: 0px 0px 20px var(---ongoing);
     }
 
     .event__card.--upcoming:hover {
-        box-shadow: 0px 0px 10px var(---upcoming);
+        box-shadow: 0px 0px 20px var(---upcoming);
     }
 }
-
 @media (max-width:820px) {
 
     .filters__container {
@@ -318,11 +304,12 @@
     .event__card {
         min-height: 400px;
     }
+        
 }
 
 @media (max-width:575px) {
     #latesteventSection {
-        margin: 2.5rem 10px 0 10px;
+        margin: 2.5rem 10px 2rem 10px;
     }
 
     .allevents__container {
@@ -368,8 +355,8 @@
     .allevents__container {
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
-        gap: 10px;
-        margin: 3rem 10px 10px 10px;
+        gap: 30px;
+        margin: 3rem 30px 10px 30px;
     }
 
     .event__textcontainer {

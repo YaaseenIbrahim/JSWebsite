@@ -8,7 +8,9 @@
     text-decoration: none;
     font-family: Outfit, Faruma;
 }
-
+body{
+    overflow: none;
+}
 /* Some Quick classes for usually re-used things */
 .flex-parent {
     display: flex;
@@ -22,10 +24,12 @@
     align-items: center;
     flex-direction: column;
 }
-.--center{
+
+.--center {
     justify-content: center;
     align-items: center;
 }
+
 .--spacebetween {
     justify-content: space-between;
 }
@@ -192,7 +196,7 @@
     position: fixed;
     z-index: 1;
 }
-
+/* Footer */
 #footer {
     display: grid;
     padding: 0 7.5% 2rem 7.5%;
@@ -201,13 +205,15 @@
     position: relative;
     background-color: rgb(240, 139, 139);
 }
-.footer__line{
+
+.footer__line {
     position: absolute;
     top: 0;
     width: 100%;
     background-color: rgb(190, 51, 51);
     height: 10px;
 }
+
 .footer__title {
     font-family: Outfit Bold;
     font-size: 1.4rem;
@@ -235,6 +241,11 @@
 
 .footer__link {
     margin: 0 1rem;
+    justify-content: left;
+    gap: 1rem;
+    align-items: center;
+    display: flex;
+
 }
 
 .links__verticaline {
@@ -243,15 +254,15 @@
     background-color: rgb(165, 44, 44);
     border-radius: 12px;
 }
-.followus__holder{
+
+.followus__holder {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
-
 
 
 
@@ -304,9 +315,47 @@
         display: none;
     }
 
+    .additionallinks__holder,
+    .footer__title:nth-of-type(2) {
+        display: none;
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 525px) {
+    #footer {
+        display: grid;
+        padding: 0 7.5% 2rem 7.5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .contacts__holder {
+        grid-row: 2 / 3;
+    }
+
+    .footer__title {
+        text-align: left;
+    }
+
+    .followus__holder {
+        grid-template-columns: repeat(2, auto);
+        justify-content: left;
+        gap: 1rem;
+    }
+
+    .footer__link {
+        margin-left: 0;
+        gap: 1rem;
+        align-items: center;
+        display: flex;
+
+    }
+
     .banner__linksholder {
         display: none;
     }
