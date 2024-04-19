@@ -1,7 +1,7 @@
 /* CSS of everything in the homepage */
 #bannerSection {
     height: 100vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
         linear-gradient(180.05deg, rgba(176, 29, 38, 0.36) 2.08%, rgba(176, 29, 38, 0.36) 9.91%, rgba(255, 0, 15, 0.36) 31.44%, rgba(236, 151, 156, 0.36) 59.82%, rgba(255, 255, 255, 0.43) 99.95%),
         url('Images/banner-image.jpg');
     background-size: cover;
@@ -11,7 +11,7 @@
 /* ------------------------------------------------- */
 
 
-.quickfacts__rectangle{
+.quickfacts__rectangle {
     background-color: white;
     height: 20rem;
     border-radius: 45px;
@@ -21,13 +21,15 @@
     margin: 0 7.5%;
 }
 
-.quickfact__holder{
+.quickfact__holder {
     justify-content: space-between;
     width: 85%;
 }
-.quickfact__holder.--textholder{
+
+.quickfact__holder.--textholder {
     margin-top: 1rem;
 }
+
 .quickfact__text {
     font-family: Outfit Semibold;
     font-size: 1.5rem;
@@ -36,16 +38,147 @@
 .quickfact__holder.--imageholder {
     margin-top: 1rem;
 }
+
 /* To centralize the text with icons */
 .quickfact__holder.--textholder :nth-child(3) {
     margin-right: -30px;
 }
-.quickfact__holder.--textholder :nth-child(4){
+
+.quickfact__holder.--textholder :nth-child(4) {
     margin-right: 30px;
 }
 
 /* -------------------------------------------------- */
 
-#infoSection {
-    margin: 0 7.5%;
+.infoSection {
+    margin: 4rem 7.5%;
+}
+
+.infoSection.--top {
+    margin-top: -4rem;
+}
+
+.infoblock {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.info__title {
+    font-family: Outfit Bold;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.info__image {
+    width: 100%;
+}
+
+.info__description {
+    color: #5c5c5c;
+    text-align: center;
+}
+
+.longblock {
+    background-color: #F4F4F4;
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.longblock__title {
+    font-family: Outfit Bold;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.longblock__image {
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+.longblock__description {
+    margin: 0 15%;
+    color: #363636;
+    padding-bottom: 2rem;
+}
+
+.browseblock {
+    background-color: white;
+    border-radius: 20px;
+    width: 80%;
+    padding: 2rem 0;
+    margin-bottom: 4rem;
+}
+.title-view-holder{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0 12.5%;
+}
+.browse__title {
+    font-family: Outfit Bold;
+    font-size: 2rem;
+}
+
+.viewall-button {
+    padding: 5px 3rem;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+    font-family: Outfit Semibold;
+    background-color: #FCE07C;
+    border-radius: 16px;
+    transition: 0.25s ease-in-out all;
+}
+
+.viewall-button:hover {
+    transform: translateY(-5px);
+}
+
+.browse__cardsholder {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 2%;
+    grid-auto-flow: dense;
+    margin: 2rem 12.5% 0 12.5%;
+}
+
+.browse__card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 200px;
+}
+
+
+.card__image {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+    height: 55%;
+}
+.card__title {
+    font-family: Outfit Semibold;
+    font-size: 1.2rem;
+    width: auto;
+}
+.card__date {
+    color: #5c5c5c;
+    font-size: 0.9rem;
+}
+
+.card__description {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }

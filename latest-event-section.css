@@ -113,7 +113,6 @@
     position: relative;
     text-align: center;
     min-height: 400px;
-    text-decoration: none;
 }
 
 .event__card::before {
