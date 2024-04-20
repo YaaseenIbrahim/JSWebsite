@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>news page</title>
     <meta charset="UTF-8">
@@ -7,151 +8,135 @@
     <title>Document</title>
     <link rel="stylesheet" href="newspage.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-   <!-- navbar start -->
-   <nav id="navbar">
-    <div class="navbar__logocontainer">
-        <img class="navbar__logo" id="--image" src="Images/Logos/School Logo.png" alt="Jalaluddin">
-        <div class=" navbar__logo --text flex-parent-col navbar__alltext ">
-            <a href="#" class=" navbar__logo">Jalaluddin School</a>
-            <a href="#" class=" navbar__logo">ޖަލާލުއްދީން ސްކޫލް</a>
+    <nav id="navbar">
+        <div class="navbar__logocontainer">
+            <img class="navbar__logo" id="--image" src="Images/Logos/School Logo.png" alt="Jalaluddin">
+            <div class=" navbar__logo --text flex-parent-col navbar__alltext ">
+                <a href="#" class=" navbar__logo">Jalaluddin School</a>
+                <a href="#" class=" navbar__logo">ޖަލާލުއްދީން ސްކޫލް</a>
+            </div>
         </div>
-    </div>
 
-    <div class="navbar__linksholder">
-        <a href="#" class="navbar__links navbar__alltext flex-parent --news">News</a>
-        <a href="#" class="navbar__links navbar__alltext flex-parent --history">History</a>
-        <a href="#" class="navbar__links navbar__alltext flex-parent --slc">SLC</a>
-        <a href="#" class="navbar__links navbar__alltext flex-parent --events">Events</a>
-    </div>
-</nav>
-<!-- navbar end -->
+        <div class="navbar__linksholder">
+            <a href="#" class="navbar__links navbar__alltext flex-parent --news">News</a>
+            <a href="#" class="navbar__links navbar__alltext flex-parent --history">History</a>
+            <a href="#" class="navbar__links navbar__alltext flex-parent --slc">SLC</a>
+            <a href="#" class="navbar__links navbar__alltext flex-parent --events">Events</a>
+        </div>
+    </nav>
 
-<!-- main news star -->
-<div class="container-1">
-     <img class="main-image" src="Images\news\main.news.jpg"> 
-    <div class="title-container">
-    <p class="title">The new trend: online learning</p>
-    </div>
+    <section id="main-news-section">
+        <img class="mainnews__image" src="Images\news\main.news.jpg">
+        <div class="mainnews__textcontainer">
+            <p class="mainnews__title">The new trend: online learning stuff</p>
+            <p class="mainnews__time">29 minutes ago</p>
+            <p class="mainnews__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis odit
+                saepe sint, aliquid
+                mollitia quas ipsa tenetur optio vitae inventore nostrum in! Facere voluptatibus, quod suscipit sunt
+                natus ad eos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio doloribus quia aut
+                cupiditate! Adipisci numquam sapiente odit recusandae explicabo? Repellendus cum reprehenderit pariatur
+                explicabo minus quae eius minima omnis animi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat expedita officiis alias dignissimos odit reiciendis beatae! A voluptates ab itaque quo
+                provident. Saepe numquam at voluptatibus vero cumque sint magni.</p>
+        </div>
+    </section>
 
-<div class="time-container"> <p class="time">29 minutes ago</p> </div>   
-<div class="desc-container"><p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis odit saepe sint, aliquid mollitia quas ipsa tenetur optio vitae inventore nostrum in! Facere voluptatibus, quod suscipit sunt natus ad eos. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio doloribus quia aut cupiditate! Adipisci numquam sapiente odit recusandae explicabo? Repellendus cum reprehenderit pariatur explicabo minus quae eius minima omnis animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat expedita officiis alias dignissimos odit reiciendis beatae! A voluptates ab itaque quo provident. Saepe numquam at voluptatibus vero cumque sint magni.</p> -->
-</div>
-</div>
-<!-- main news end  -->
+    <section id="latest-news-section">
+        <div class="title__container">
+            <div class="line"></div>
+            <p class="latest-news__title">Latest news</p>
+            <div class="line"></div>
+        </div>
 
-<div class="latest-news">
-    <p class="latest-news">Latest news</p>
-</div>
+        <a href="#" class="newsblock">
+            <img class="newsblock__image" src="Images\news\img-1.jpg">
+            <div>
+                <p class="newsblock__title">Report distribution day</p>
+                <p class="newsblock__date">20 february 2024</p>
+            </div>
+        </a>
 
+        <a href="#" class="newsblock">
+            <img class="newsblock__image" src="Images\news\img-4.jpg">
+            <div>
+                <p class="newsblock__title">Celebrating womens day 2024</p>
+                <p class="newsblock__date">27 february 2024</p>
+            </div>
+        </a>
+        </div>
 
-
-<div class="container-3">
-
-    <div class="card">
-        <img class="card-img" src="Images\news\img-1.jpg">
-        <div class="card_info">
-        <h2>Report distribution day</h2>
-        <span>20 february 2024</span>
-    </div>
-    </div>
-
-
-
-    <div class="card">
-        <img class="card-img" src="Images\news\img-4.jpg">
-        <div class="card_info">
-        <h2>Celebrating womens day 2024</h2>
-        <span>27 february 2024</span>
-    </div>
-    </div>
-
-
-    <div class="card">
-        <img class="card-img" src="Images\news\img-5.jpg">
-        <div class="card_info">
-        <h2>Introducing Prefect wall</h2>
-        <span>27 march 2024</span>
-    </div>
-    </div>
-
-    <div class="card">
-        <img class="card-img" src="Images\news\img-6.jpg">
-        <div class="card_info">
-        <h2>Celebrating womens day 2024</h2>
-        <span>27 february 2024</span>
-    </div>
-    </div>
+        <a href="#" class="newsblock">
+            <img class="newsblock__image" src="Images\news\img-5.jpg">
+            <div>
+                <p class="newsblock__title">Introducing Prefect wall</p>
+                <p class="newsblock__date">27 march 2024</p>
+            </div>
+        </a>
 
 
-    <div class="card">
-        <img class="card-img" src="Images\news\img-2.jpg">
-        <div class="card_info">
-        <h2>Scouts celebrate earth hour</h2>
-        <span>27 february 2024</span>
-    </div>
-    </div>
+        <a href="#" class="newsblock">
+            <img class="newsblock__image" src="Images\news\img-6.jpg">
+            <div>
+                <p class="newsblock__title">Celebrating womens day 2024</p>
+                <p class="newsblock__date">27 february 2024</p>
+            </div>
+        </a>
 
+        <a href="#" class="newsblock">
+            <img class="newsblock__image" src="Images\news\img-2.jpg">
+            <div>
+                <p class="newsblock__title">Scouts celebrate earth hour</p>
+                <p class="newsblock__date">27 february 2024</p>
+            </div>
+        </a>
 
-    <div class="card">
-        <img class="card-img" src="Images\news\img-3.jpg">
-        <div class="card_info">
-        <h2>Jalaluddin school celebrates Down syndrome day</h2>
-        <span>27 february 2024</span>
-    </div>
-    </div>
+        <a href="#" class="newsblock">
+            <img class="newsblock__image" src="Images\news\img-3.jpg">
+            <div>
+                <p class="newsblock__title">Jalaluddin school celebrates Down syndrome day</p>
 
+                <p class="newsblock__date">27 february 2024</p>
+            </div>
+        </a>
 
-</div>
+    </section>
+    <div class="line --long"></div>
 
-<!-- startig the end break line pink thingy -->
-<div class="line-2"></div>
-<!-- end of line break thingy -->
+    <section id="special-news-section">
+        <div class="specialcard --hall">
+            <div class="gradient-giver">
+                <img class="specialcard__image" src="Images\news\card-1.jpg" alt="book fair">
+            </div>
+            <p class="specialcard__title">Book fair</p>
+        </div>
 
-<div class="container-4">
+        <div class="specialcard --staff">
+            <div class="gradient-giver">
+                <img class="specialcard__image" src="Images\news\card-3.jpg">
+            </div>
+            <p class="specialcard__title">poster competition</p>
+        </div>
 
-    <div class="card-1">
-        <div class="gradient-1"></div>
-        <img class="card-img-1" src="Images\news\card-1.jpg" alt="book fair">
-        <span class="card-1-text">Book fair</span>
-        <button class="button-1">recent</button>
-    </div>
+        <div class="specialcard --staff">
+            <div class="gradient-giver">
+                <img class="specialcard__image" src="Images\news\img-3.jpg">
+            </div>
+            <p class="specialcard__title">Down syndrome</p>
+        </div>
 
+        <div class="specialcard --staff">
+            <div class="gradient-giver">
+                <img class="specialcard__image" src="Images\news\card-4.jpg">
 
-
-    <div class="card-1">
-        <div class="gradient-1"></div>
-        <img class="card-img-1" src="Images\news\card-3.jpg">
-        <span class="card-1-text">poster competition</span>
-        <button class="button-1">recent</button>
-    </div>
-
-
-    <div class="card-1">
-        <div class="gradient-1"></div>
-        <img class="card-img-1" src="Images\news\img-3.jpg">
-        <span class="card-1-text">Down syndrome</span>
-        <button class="button-1">recent</button>
-    </div>
-
-
-    <div class="card-1">
-        <div class="gradient-1"></div>
-        <img class="card-img-1" src="Images\news\card-4.jpg" >
-        <span class="card-1-text">Science fair
-        </span>
-        <button class="button-1">recent</button>
-    </div>   
-
-
-
-</div>
-
-
+            </div>
+            <p class="specialcard__title">Science fair
+            </p>
+        </div>
+    </section>
 </body>
+
 </html>
