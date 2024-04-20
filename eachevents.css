@@ -79,7 +79,7 @@
 .event__name {
     font-family: Outfit Semibold;
     font-size: 1.8rem;
-    max-width: 500px;
+    max-width: 600px;
     display: inline-block;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
@@ -90,23 +90,18 @@
 
 .scrollable-bar {
     display: flex;
-    align-items: center;
-    gap: 2rem;
-    white-space: nowrap;
-    transition: all 0.2s;
-    will-change: transform;
-    user-select: none;
-}
-
-.album__selecter {
-    display: inline-flex;
-    flex-direction: row;
-    width: 100%;
-    overflow-x: scroll;
     cursor: grab;
     position: relative;
     scroll-behavior: smooth;
+    align-items: center;
+    gap: 2rem;
+    white-space: nowrap;
+    overflow-x: scroll;
     overflow-y: hidden;
+    transition: all 0.2s;
+    will-change: transform;
+    user-select: none;
+    min-height: 60px;
 }
 
 ::-webkit-scrollbar {
@@ -176,12 +171,12 @@
 
 .album__description {
     text-align: justify;
-    margin: 5vh 15%;
+    margin: 3rem 15%;
 }
 
 .album__title {
     font-family: Outfit Semibold;
-    font-size: 1.6vw;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 2rem;
 }
@@ -253,9 +248,26 @@
     .album__quicklink {
         font-size: 14px;
     }
+
+    .album__description {
+        margin: 2.5rem 10%;
+    }
+
+    .album__title {
+        font-size: 2rem;
+    }
+
+    .album__gallery {
+        gap: 20px;
+    }
 }
 
-@media (max-width:915px) {
+@media (max-width:767px) {
+    .album__gallery {
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .scroll__button {
         padding: 1px 10px 3px 10px;
         font-size: 1.2rem;
@@ -281,10 +293,7 @@
     }
 }
 
-@media (max-width:750px) {
-
-
-@media (max-width: 525px) {
+@media (max-width: 480px) {
     .focusevent__title {
         font-size: 3rem;
         margin-top: 10vh;
@@ -299,5 +308,13 @@
         font-size: .9rem;
         padding: 1.5rem .8rem;
     }
-}
+
+    .album__description {
+        margin: 2rem 7%;
+    }
+
+    .album__title {
+        font-size: 1.5rem;
+    }
+
 }
