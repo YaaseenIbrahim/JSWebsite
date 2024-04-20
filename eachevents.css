@@ -89,22 +89,43 @@
 }
 
 .scrollable-bar {
-    scroll-behavior: smooth;
     display: flex;
     align-items: center;
     gap: 2rem;
-    cursor: grab;
-    position: relative;
-    overflow-x: scroll;
-    overflow-y: hidden;
     white-space: nowrap;
     transition: all 0.2s;
     will-change: transform;
     user-select: none;
 }
 
-.scrollable-bar::-webkit-scrollbar {
-    display: none;
+.album__selecter {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    cursor: grab;
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F2F2F2;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BDBDBD;
+    border-radius: 4px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6E6E6E;
 }
 
 .album__quicklink {
@@ -152,11 +173,6 @@
     width: 25%;
 }
 
-.album__selecter {
-    display: inline-flex;
-    flex-direction: row;
-    width: 90%;
-}
 
 .album__description {
     text-align: justify;
