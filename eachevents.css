@@ -210,3 +210,28 @@
     text-align: center;
 
 }
+
+@media (max-width:915px) {
+  
+}
+
+@media (max-width:750px) {
+
+
+@media (max-width: 525px) {
+    .focusevent__title {
+        font-size: 3rem;
+        margin-top: 10vh;
+    }
+
+    .focusevent__date {
+        margin-bottom: 5vh;
+    }
+
+    .focusevent__description {
+        margin: 7rem 6% 0 6%;
+        font-size: .9rem;
+        padding: 1.5rem .8rem;
+    }
+}
+}
