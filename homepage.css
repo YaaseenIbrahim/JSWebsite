@@ -12,6 +12,34 @@
 
 
 .quickfacts__rectangle {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto;
+    background-color: white;
+    height: 20rem;
+    border-radius: 45px;
+    transform: translateY(-7.5rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+    margin: 0 7.5%;
+    justify-content: space-evenly;
+    align-items: center;    
+    text-align: center;
+}
+.quickfacts__titles{
+    font-family: Outfit Semibold;
+        font-size: 1.5rem;
+margin-bottom: -1rem;        
+
+}
+.quickfacts__icons{
+        justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+
+
+
+/* .quickfacts__rectangle {
     background-color: white;
     height: 20rem;
     border-radius: 45px;
@@ -115,12 +143,14 @@
     padding: 2rem 0;
     margin-bottom: 4rem;
 }
-.title-view-holder{
+
+.title-view-holder {
     justify-content: space-between;
     display: flex;
     align-items: center;
     margin: 0 12.5%;
 }
+
 .browse__title {
     font-family: Outfit Bold;
     font-size: 2rem;
@@ -141,7 +171,7 @@
 
 .browse__cardsholder {
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     justify-content: space-between;
     gap: 2%;
@@ -164,11 +194,13 @@
     object-position: center;
     height: 55%;
 }
+
 .card__title {
     font-family: Outfit Semibold;
     font-size: 1.2rem;
     width: auto;
 }
+
 .card__date {
     color: #5c5c5c;
     font-size: 0.9rem;
@@ -181,4 +213,52 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+@media (max-width:800px){
+        .quickfacts__rectangle{
+            height: 15rem;
+            ;
+        }
+        .quickfacts__titles {
+            font-size: 1.2rem;
+margin-bottom: -6rem;            
+    
+
+        }
+    
+        .quickfacts__icons {
+            scale: 60%;
+            margin-top: 3rem;
+        }
+}
+@media (max-width:700px){
+    .quickfacts__rectangle {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(4, auto);
+            background-color: white;
+            height: 20rem;
+            border-radius: 45px;
+            transform: translateY(-7.5rem);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+            margin: 0 7.5%;
+            text-align: center;
+            align-items: center;
+            
+        }
+    .quickfacts__titles {
+            font-size: 1.2rem;
+            margin-top: -40px;
+    
+        }
+    
+        .quickfacts__icons {
+            scale: 60%;
+            margin-top: 25px;
+        }
+        .quickfacts__icons:nth-of-type(1),.quickfacts__icons:nth-of-type(2){
+            grid-row: 2 / 3;
+        }
+                
 }
