@@ -78,7 +78,14 @@
 
 .event__name {
     font-family: Outfit Semibold;
-    font-size: 2vw;
+    font-size: 1.8rem;
+    max-width: 500px;
+    display: inline-block;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 .scrollable-bar {
@@ -143,6 +150,12 @@
 
 .line.--outerlines {
     width: 25%;
+}
+
+.album__selecter {
+    display: inline-flex;
+    flex-direction: row;
+    width: 90%;
 }
 
 .album__description {
@@ -211,8 +224,45 @@
 
 }
 
+@media (max-width:1024px) {
+    .event__name {
+        font-size: 1.5rem;
+        max-width: 300px;
+    }
+
+    .event__organizer {
+        font-size: 14px;
+    }
+
+    .album__quicklink {
+        font-size: 14px;
+    }
+}
+
 @media (max-width:915px) {
-  
+    .scroll__button {
+        padding: 1px 10px 3px 10px;
+        font-size: 1.2rem;
+    }
+
+    .event__name {
+        font-size: 1.4rem;
+        max-width: 100%;
+    }
+
+    .event__organizer {
+        font-size: 12px;
+    }
+
+    .quick-access-toolbar {
+        flex-direction: column;
+    }
+
+    .name-organizer__holder {
+        border-right: 0;
+        border-bottom: 5px solid var(---linegray);
+        padding: 1rem .5rem 2rem .5rem;
+    }
 }
 
 @media (max-width:750px) {
