@@ -12,8 +12,11 @@ section{
     margin: auto auto 6rem auto;
     width: fit-content;
 }
-.resource__subheading{
+.resources__subheading{
     font-family: Outfit Semibold;
+}
+.resources__subheading.--margin{
+    margin-bottom: 2rem;
 }
 a{
     text-decoration: underline;
