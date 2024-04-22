@@ -1,14 +1,20 @@
-/* CSS for each individul writings page */
+/* CSS for each individul writings/news page for both eng and dhi */
+
+#thumbnail-section.--dhivehi *:not(.thumbnail__authorclass.--dhivehi) {
+    font-family: MV Mag Round;
+
+}
+#writing-section.--dhivehi p {
+    font-family: MV Waheed;
+    font-size: 1.3rem;
+    text-indent: 4rem;
+}
+
 #thumbnail-section {
     margin: 4rem 7.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#thumbnail-section.--dhivehi *:not(.thumbnail__authorclass.--dhivehi) {
-    font-family: MV Mag Round;
-
 }
 
 .thumbnail__image {
@@ -33,51 +39,20 @@
     padding: 0.2rem 1rem;
     border-radius: 20px;
 }
-#thumbnail-section.--dhivehi .thumbnail__category:before{
-    padding: 0.2rem 2rem;
-}
 
-.thumbnail__category.--saanavee:before {
-    content: 'ސާނަވީ';
-    background-color: rgba(173, 221, 94, 0.5);
-}
-
-.thumbnail__category.--matheesaanavee:before {
-    content: 'މަތީ ސާނަވީ';
-    background-color: rgba(221, 94, 194, 0.5);
-}
-
-.thumbnail__category.--vaahaka:before {
-    content: 'ވާހަކަ';
-    background-color: rgba(233, 248, 14, 0.589);
-}
-.thumbnail__category.--secondary:before {
-    content: 'Secondary';
-    background-color: rgba(248, 100, 14, 0.589);
-}
-.thumbnail__category.--informative:before {
-    content: 'Informative';
-    background-color: rgba(95, 57, 199, 0.589);
-}
 .thumbnail__title {
     font-size: 3rem;
-    margin-bottom: 1rem;
     text-transform: capitalize;
     align-self: center;
     font-family: Outfit Bold;
 }
 
-.thumbnail__author.--dhivehi {
-    margin-left: 0.5rem;
-}
+
 .thumbnail__author{
     margin-right: 0.5rem;
 }
 
-.thumbnail__authorclass.--dhivehi {
-    font-family: Outfit Semibold;
-    font-size: 0.9rem;
-}
+
 
 .line {
     width: 100%;
@@ -89,8 +64,7 @@
 /* ------------- */
 
 #writing-section{
-    margin: 0 12.5% 5rem 12.5%;
-    
+    margin: 0 20% 5rem 20%;
 }
 
 .paragraph{
@@ -99,11 +73,7 @@
     font-size: 1.2rem;
     text-indent: 2rem;
 }
-#writing-section.--dhivehi p {
-    font-family: MV Waheed;
-    font-size: 1.3rem;
-    text-indent: 4rem;
-}
+
 .subheading{
     margin: 3rem 0;
     font-family: Outfit Semibold, Faruma;
@@ -116,6 +86,9 @@
 }
 
 @media (max-width:750px){
+    #writing-section {
+            margin: 0 12.5% 5rem 12.5%;
+        }
     .thumbnail__image{
         display: none;
     }

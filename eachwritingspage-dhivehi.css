@@ -1,0 +1,32 @@
+/* CSS for DHIVEHI writings only */
+
+
+#thumbnail-section.--dhivehi .thumbnail__category:before {
+    padding: 0.2rem 2rem;
+}
+
+.thumbnail__category.--saanavee:before {
+    content: 'ސާނަވީ';
+    background-color: rgba(173, 221, 94, 0.5);
+}
+
+.thumbnail__category.--matheesaanavee:before {
+    content: 'މަތީ ސާނަވީ';
+    background-color: rgba(221, 94, 194, 0.5);
+}
+
+.thumbnail__category.--vaahaka:before {
+    content: 'ވާހަކަ';
+    background-color: rgba(233, 248, 14, 0.589);
+}
+.thumbnail__author.--dhivehi {
+    margin-left: 0.5rem;
+}
+.thumbnail__authorclass.--dhivehi {
+    font-family: Outfit Semibold;
+    font-size: 0.9rem;
+}
+
+.thumbnail__title{
+    margin-bottom: 1rem;
+}

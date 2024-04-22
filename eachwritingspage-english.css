@@ -1,0 +1,15 @@
+/* CSS for ENGLISH writings only */
+
+.thumbnail__category.--secondary:before {
+    content: 'Secondary';
+    background-color: rgba(248, 100, 14, 0.589);
+}
+
+.thumbnail__category.--informative:before {
+    content: 'Informative';
+    background-color: rgba(95, 57, 199, 0.589);
+}
+
+.thumbnail__title {
+    margin-bottom: 1rem;
+}
