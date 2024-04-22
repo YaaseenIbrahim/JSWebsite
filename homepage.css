@@ -1,7 +1,7 @@
 /* CSS of everything in the homepage */
 #bannerSection {
     height: 100vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
         linear-gradient(180.05deg, rgba(176, 29, 38, 0.36) 2.08%, rgba(176, 29, 38, 0.36) 9.91%, rgba(255, 0, 15, 0.36) 31.44%, rgba(236, 151, 156, 0.36) 59.82%, rgba(255, 255, 255, 0.43) 99.95%),
         url('Images/banner-image.jpg');
     background-size: cover;
@@ -11,7 +11,37 @@
 /* ------------------------------------------------- */
 
 
-.quickfacts__rectangle{
+.quickfacts__rectangle {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto;
+    background-color: white;
+    height: 20rem;
+    border-radius: 45px;
+    transform: translateY(-7.5rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+    margin: 0 7.5%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.quickfacts__titles {
+    font-family: Outfit Semibold;
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
+
+}
+
+.quickfacts__icons {
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+
+
+
+/* .quickfacts__rectangle {
     background-color: white;
     height: 20rem;
     border-radius: 45px;
@@ -21,13 +51,15 @@
     margin: 0 7.5%;
 }
 
-.quickfact__holder{
+.quickfact__holder {
     justify-content: space-between;
     width: 85%;
 }
-.quickfact__holder.--textholder{
+
+.quickfact__holder.--textholder {
     margin-top: 1rem;
 }
+
 .quickfact__text {
     font-family: Outfit Semibold;
     font-size: 1.5rem;
@@ -36,16 +68,482 @@
 .quickfact__holder.--imageholder {
     margin-top: 1rem;
 }
+
 /* To centralize the text with icons */
 .quickfact__holder.--textholder :nth-child(3) {
     margin-right: -30px;
 }
-.quickfact__holder.--textholder :nth-child(4){
+
+.quickfact__holder.--textholder :nth-child(4) {
     margin-right: 30px;
 }
 
 /* -------------------------------------------------- */
 
-#infoSection {
-    margin: 0 7.5%;
+.infoSection {
+    margin: 4rem 7.5%;
+}
+
+.infoSection.--top {
+    margin-top: -4rem;
+}
+
+.infoblock {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.info__title {
+    font-family: Outfit Bold;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.info__image {
+    width: 100%;
+}
+.info__imagemobile{
+    width: 100%;
+    display: none;
+}
+
+.info__description {
+    color: #5c5c5c;
+    text-align: center;
+}
+
+.longblock {
+    background-color: #F4F4F4;
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.longblock__title {
+    font-family: Outfit Bold;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.longblock__image {
+    width: 80%;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.longblock__description {
+    margin: 0 15%;
+    color: #363636;
+    padding-bottom: 2rem;
+}
+
+.browseblock {
+    border-radius: 20px;
+    width: 68rem;
+    padding: 2rem 0;
+        background-color: white;
+    margin-bottom: 4rem;
+}
+
+.title-view-holder {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0 12.5%;
+}
+
+.browse__title {
+    font-family: Outfit Bold;
+    font-size: 2rem;
+}
+
+.viewall-button {
+    padding: 5px 3rem;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.4);
+    font-family: Outfit Semibold;
+    background-color: #FCE07C;
+    border-radius: 16px;
+    transition: 0.25s ease-in-out all;
+}
+
+.viewall-button:hover {
+    transform: translateY(-5px);
+}
+
+.browse__cardsholder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 20px;
+    grid-auto-flow: dense;
+    margin: 2rem 12.5%;
+}
+
+.browse__card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 1.5rem;
+    width: 200px;
+    background-color: white;
+}
+
+
+.card__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 55%;
+}
+
+.card__title {
+    margin-top: 0.5rem;
+    font-family: Outfit Semibold;
+    font-size: 1.2rem;
+}
+
+.card__date {
+    color: #5c5c5c;
+    font-size: 0.9rem;
+}
+
+.card__description {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media (max-width:1111px) {
+    .browseblock {
+        width: 50rem;
+    }
+
+    .title-view-holder {
+        margin: 0 10%;
+    }
+
+    .browse__cardsholder {
+        margin: 2rem 10% 0 10%;
+    }
+
+    .browse__card {
+        width: 150px;
+    }
+
+    .card__title {
+        font-size: 1rem;
+    }
+
+    .card__date {
+        font-size: 0.8rem;
+    }
+
+    .card__description {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width:820px) {
+    .info__image{
+        display: none;
+    }
+    .info__imagemobile{
+        display: block;
+    }
+    .browseblock {
+        width: 40rem;
+
+    }
+
+    .title-view-holder {
+        margin: 0 4%;
+    }
+
+    .browse__cardsholder {
+        margin: 2rem 4% 0 4%;
+    }
+
+    .browse__card {
+        padding: 1.25rem;
+        width: 135px;
+    }
+
+    .card__image {
+        margin-bottom: 1px;
+    }
+
+    .card__title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+
+    .card__description {
+        margin-top: 0.4rem;
+        -webkit-line-clamp: 2;
+    }
+}
+
+@media (max-width:800px) {
+
+    .quickfacts__rectangle {
+        height: 15rem;
+        ;
+    }
+
+    .quickfacts__titles {
+        font-size: 1.2rem;
+        margin-bottom: -6rem;
+
+
+    }
+
+    .quickfacts__icons {
+        scale: 60%;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width:700px) {
+    .quickfacts__rectangle {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        background-color: white;
+        height: 20rem;
+        border-radius: 45px;
+        transform: translateY(-7.5rem);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+        margin: 0 7.5%;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .quickfacts__titles {
+        font-size: 1.2rem;
+        margin-top: -40px;
+
+    }
+
+    .quickfacts__icons {
+        scale: 60%;
+        margin-top: 25px;
+    }
+
+    .quickfacts__icons:nth-of-type(1),
+    .quickfacts__icons:nth-of-type(2) {
+        grid-row: 2 / 3;
+    }
+
+}
+
+@media (max-width:650px) {
+    .browseblock {
+        width: 34rem;
+    }
+
+    .title-view-holder {
+        margin: 0 7.5%;
+    }
+
+    .browse__cardsholder {
+        grid-template-columns: auto auto;
+        margin: 2rem 7.5% 0 7.5%;
+    }
+
+    .browse__card {
+        width: 175px;
+    }
+
+    .browse__card:last-of-type {
+        display: none;
+    }
+
+    .card__title {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .card__date {
+        font-size: 0.9rem;
+    }
+
+    .card__description {
+        -webkit-line-clamp: 3;
+    }
+
+    .browse__title {
+        font-size: 1.6rem;
+    }
+
+    .viewall-button {
+        padding: 5px 2rem;
+        font-size: 0.9rem;
+    }
+
+    .longblock__title {
+        font-size: 1.5rem;
+    }
+
+    .longblock__description {
+        font-size: 0.9rem;
+        margin: 0 5%;
+    }
+
+    .longblock__image {
+        width: 90%;
+        min-height: 8rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+}
+
+@media (max-width:575px) {
+    .browseblock {
+        background-color: transparent;
+        width: 100%;
+        margin: 0;
+    }
+
+    .title-view-holder {
+        margin: 0 24px;
+    }
+
+    .browse__cardsholder {
+        gap: 20px;
+        height: 100%;
+        margin: 2rem 24px 0 24px;
+    }
+
+    .browse__card {
+        width: auto;
+        height: max-content;
+
+    }
+
+    .card__image {
+        height: 10rem;
+    }
+
+
+
+    .browse__title.--writings {
+        font-size: 1.4rem;
+    }
+
+
+}
+
+@media (max-width:430px) {
+    .browseblock {
+        padding-bottom: 1rem;
+    }
+
+    .browseblock:last-of-type {
+        margin-bottom: 4rem;
+    }
+
+    .title-view-holder {
+        margin: 15px;
+    }
+
+    .browse__card {
+        width: 100%;
+        padding: 0;
+        margin-top: 1rem;
+        height: max-content;
+    }
+
+    .browse__cardsholder {
+        gap: 15px;
+        margin: 15px;
+    }
+
+    .card__image {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .card__title {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .card__date {
+        font-size: 0.8rem;
+        padding: 0 1rem;
+    }
+
+    .card__description {
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .browse__title {
+        font-size: 1.4rem;
+    }
+
+    .browse__title.--writings {
+        font-size: 5vw;
+    }
+
+    .viewall-button {
+        padding: 4px 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .quickfacts__rectangle {
+        height: 17.5rem;
+        border-radius: 45px;
+        justify-content: center;
+        margin: 0 5%;
+    }
+
+    .quickfacts__titles {
+        font-size: 1rem;
+        word-break: break-all;
+    }
+ .quickfacts__icons {
+     scale: 40%;
+ }
+    .quickfacts__titles:nth-last-of-type(3),
+    .quickfacts__titles:nth-last-of-type(4) {
+        margin: 30px auto auto auto;
+    }
+
+    .quickfacts__titles:nth-last-of-type(1),
+    .quickfacts__titles:nth-last-of-type(2) {
+        margin: 5px auto auto auto;
+    }
+
+    .quickfacts__icons:nth-last-of-type(1),
+    .quickfacts__icons:nth-last-of-type(2) {
+            margin: -35px auto auto auto;
+    }
+
+    .quickfacts__icons:nth-last-of-type(3),
+    .quickfacts__icons:nth-last-of-type(4) {
+        margin: -40px auto auto auto;
+    }
+
+   
+}
+@media (max-width:350px){
+    .quickfacts__titles{
+        font-size: 0.9rem;
+    }
 }

@@ -1,0 +1,116 @@
+/* CSS for each individul writings page */
+#thumbnail-section {
+    margin: 4rem 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#thumbnail-section.--dhivehi *:not(.thumbnail__authorclass.--dhivehi) {
+    font-family: MV Mag Round;
+
+}
+
+.thumbnail__image {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 1rem;
+    border-radius: 45px;
+}
+
+.category__holder {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.thumbnail__category:before {
+    content: '';
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+}
+.thumbnail__category--dhivehi:before {
+    padding: 0.2rem 2rem;
+}
+
+.thumbnail__category.--saanavee:before {
+    content: 'ސާނަވީ';
+    background-color: rgba(173, 221, 94, 0.5);
+}
+
+.thumbnail__category.--matheesaanavee:before {
+    content: 'މަތީ ސާނަވީ';
+    background-color: rgba(221, 94, 194, 0.5);
+}
+
+.thumbnail__category.--vaahaka:before {
+    content: 'ވާހަކަ';
+    background-color: rgba(233, 248, 14, 0.589);
+}
+.thumbnail__category.--secondary:before {
+    content: 'Secondary';
+    background-color: rgba(248, 100, 14, 0.589);
+}
+.thumbnail__category.--informative:before {
+    content: 'Informative';
+    background-color: rgba(95, 57, 199, 0.589);
+}
+.thumbnail__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    align-self: center;
+    font-family: Outfit Bold;
+}
+
+.thumbnail__author.--dhivehi {
+    margin-left: 0.5rem;
+}
+.thumbnail__author{
+    margin-right: 0.5rem;
+}
+
+.thumbnail__authorclass.--dhivehi {
+    font-family: Outfit Semibold;
+    font-size: 0.9rem;
+}
+
+.line {
+    width: 100%;
+    height: 10px;
+    background-color: var(---linegray);
+    border-radius: 20px;
+    margin-top: 0.5rem;
+}
+/* ------------- */
+
+#writing-section{
+    margin: 0 12.5% 5rem 12.5%;
+    
+}
+
+.paragraph{
+    color: rgb(51, 51, 51);
+    text-align: justify;
+    font-size: 1.2rem;
+    text-indent: 2rem;
+    line-height: 1.6rem;
+}
+#writing-section.--dhivehi p {
+    font-family: MV Waheed;
+    font-size: 1.3rem;
+    text-indent: 4rem;
+    line-height: 2rem;
+}
+.subheading{
+    margin: 3rem 0;
+    font-family: Outfit Semibold, Faruma;
+}
+#writing-section.--dhivehi p + #writing-section.--dhivehi p {
+    margin: 2rem 0;
+}
+.paragraph + .paragraph {
+    margin: 1rem 0;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Lifecycle of a fish</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="eachwritingspage.css">
+
+    <link rel="icon" href="Images/Logos/School Logo.png" type="/icon.png">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <nav class="banner__nav --colored">
+        <a class="flex-parent" href="index.html">
+            <img src="Images/Logos/New-logo-whitetext.png" alt="logo" class="banner__logo">
+        </a>
+        <div class="banner__linksholder ">
+            <a href="#" class="banner__links ">News</a>
+            <a href="events.html" class="banner__links">Events</a>
+            <a href="#" class="banner__links">SLC</a>
+            <a href="#" class="banner__links">History</a>
+        </div>
+        <div class="banner__socialsholder flex-parent">
+            <a href="https://www.facebook.com/JalaluddinSchool" class="banner__sociallinks" target="_blank">
+                <svg width="30px" height="30px" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill="#FFFFFF"
+                        d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                    </path>
+                </svg>
+            </a>
+
+            <a href="#" class="banner__sociallinks">
+                <svg width="30px" height="30px" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill="#FFFFFF"
+                        d="M18.6,4.4c-0.3-1.2-1-2.2-2-2.9c-1.2-0.9-2.7-1.2-3.9-1.4C11,0,9.4-0.1,8,0.1C6.6,0.3,5.5,0.6,4.6,1c-1.9,0.9-3,2.2-3.3,4.1C1.1,6,1,6.9,0.9,7.6c-0.2,1.8,0,3.4,0.4,4.9c0.4,1.5,1.2,2.5,2.2,3.2c0.3,0.2,0.6,0.3,1,0.4c0.2,0.1,0.3,0.1,0.5,0.2v2.9C5,19.7,5.3,20,5.7,20l0,0c0.2,0,0.4-0.1,0.5-0.2l2.7-2.6C9,17,9,17,9.1,17c0.9,0,1.9-0.1,2.8-0.1c1.1-0.1,2.5-0.2,3.7-0.7c1.1-0.5,2-1.2,2.5-2.2c0.5-1.1,0.8-2.2,0.9-3.5C19.3,8.2,19.1,6.2,18.6,4.4z M13.9,13.1c-0.3,0.4-0.7,0.8-1.2,1c-0.4,0.1-0.7,0.1-1.1,0C8.8,12.8,6.5,10.9,5,8.1C4.7,7.5,4.5,6.9,4.2,6.3C4.2,6.2,4.2,6,4.2,5.9c0-1,0.8-1.5,1.5-1.7c0.3-0.1,0.5,0,0.8,0.2c0.6,0.6,1.1,1.2,1.4,2C8,6.7,8,7,7.7,7.2C7.6,7.3,7.6,7.3,7.5,7.4C6.9,7.8,6.8,8.2,7.2,8.9c0.5,1.2,1.5,1.9,2.6,2.4c0.3,0.1,0.6,0.1,0.8-0.2c0,0,0.1-0.1,0.1-0.1c0.5-0.8,1.1-0.7,1.8-0.3c0.4,0.3,0.8,0.6,1.2,0.9C14.3,12.1,14.3,12.5,13.9,13.1z M10.4,5.1c-0.2,0-0.3,0-0.5,0C9.7,5.2,9.5,5,9.4,4.8c0-0.3,0.1-0.5,0.4-0.5c0.2,0,0.4-0.1,0.6-0.1c2.1,0,3.7,1.7,3.7,3.7c0,0.2,0,0.4-0.1,0.6c0,0.2-0.2,0.4-0.5,0.4c0,0-0.1,0-0.1,0c-0.3,0-0.4-0.3-0.4-0.5c0-0.2,0-0.3,0-0.5C13.2,6.4,12,5.1,10.4,5.1z M12.5,8.2c0,0.3-0.2,0.5-0.5,0.5s-0.5-0.2-0.5-0.5c0-0.8-0.6-1.4-1.4-1.4c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5C11.4,5.8,12.5,6.9,12.5,8.2zM15.7,8.8c-0.1,0.2-0.2,0.4-0.5,0.4c0,0-0.1,0-0.1,0c-0.3-0.1-0.4-0.3-0.4-0.6c0.1-0.3,0.1-0.6,0.1-0.9c0-2.3-1.9-4.2-4.2-4.2c-0.3,0-0.6,0-0.9,0.1C9.5,3.6,9.2,3.5,9.2,3.2C9.1,2.9,9.3,2.7,9.5,2.6c0.4-0.1,0.8-0.1,1.1-0.1c2.8,0,5.2,2.3,5.2,5.2C15.8,8,15.8,8.4,15.7,8.8z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <img src="Images/Icon svgs/menu.svg" alt="" class="banner__menuicon noselect" onclick="showSidemenu()">
+        <div id="sidemenu--area">
+            <div class="darkside" onclick="closeThing(sidemenuArea)"></div>
+            <div class="sidemenu">
+                <div class="close__button noselect" onclick="closeThing(sidemenuArea)">&times;</div>
+
+                <a class="flex-parent" href="#">
+                    <img src="Images/Logos/Full-logo-whitelogo-whitetext.png" alt="logo"
+                        class="sidemenu__logo noselect">
+                </a>
+                <div class="sidemenu__linksholder ">
+                    <a href="#" class="sidemenu__links ">News</a>
+                    <a href="events.html" class="sidemenu__links">Events</a>
+                    <a href="#" class="sidemenu__links">SLC</a>
+                    <a href="#" class="sidemenu__links">History</a>
+                </div>
+                <div class="sidemenu__socialsholder">
+                    <a href="https://www.facebook.com/JalaluddinSchool" class="sidemenu__sociallinks" target="_blank">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill="#FFFFFF"
+                                d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a href="#" class="sidemenu__sociallinks">
+                        <svg width="20px" height="20px" viewBox="0 0 20 20" aria-hidden="true">
+                            <path fill="#FFFFFF"
+                                d="M18.6,4.4c-0.3-1.2-1-2.2-2-2.9c-1.2-0.9-2.7-1.2-3.9-1.4C11,0,9.4-0.1,8,0.1C6.6,0.3,5.5,0.6,4.6,1c-1.9,0.9-3,2.2-3.3,4.1C1.1,6,1,6.9,0.9,7.6c-0.2,1.8,0,3.4,0.4,4.9c0.4,1.5,1.2,2.5,2.2,3.2c0.3,0.2,0.6,0.3,1,0.4c0.2,0.1,0.3,0.1,0.5,0.2v2.9C5,19.7,5.3,20,5.7,20l0,0c0.2,0,0.4-0.1,0.5-0.2l2.7-2.6C9,17,9,17,9.1,17c0.9,0,1.9-0.1,2.8-0.1c1.1-0.1,2.5-0.2,3.7-0.7c1.1-0.5,2-1.2,2.5-2.2c0.5-1.1,0.8-2.2,0.9-3.5C19.3,8.2,19.1,6.2,18.6,4.4z M13.9,13.1c-0.3,0.4-0.7,0.8-1.2,1c-0.4,0.1-0.7,0.1-1.1,0C8.8,12.8,6.5,10.9,5,8.1C4.7,7.5,4.5,6.9,4.2,6.3C4.2,6.2,4.2,6,4.2,5.9c0-1,0.8-1.5,1.5-1.7c0.3-0.1,0.5,0,0.8,0.2c0.6,0.6,1.1,1.2,1.4,2C8,6.7,8,7,7.7,7.2C7.6,7.3,7.6,7.3,7.5,7.4C6.9,7.8,6.8,8.2,7.2,8.9c0.5,1.2,1.5,1.9,2.6,2.4c0.3,0.1,0.6,0.1,0.8-0.2c0,0,0.1-0.1,0.1-0.1c0.5-0.8,1.1-0.7,1.8-0.3c0.4,0.3,0.8,0.6,1.2,0.9C14.3,12.1,14.3,12.5,13.9,13.1z M10.4,5.1c-0.2,0-0.3,0-0.5,0C9.7,5.2,9.5,5,9.4,4.8c0-0.3,0.1-0.5,0.4-0.5c0.2,0,0.4-0.1,0.6-0.1c2.1,0,3.7,1.7,3.7,3.7c0,0.2,0,0.4-0.1,0.6c0,0.2-0.2,0.4-0.5,0.4c0,0-0.1,0-0.1,0c-0.3,0-0.4-0.3-0.4-0.5c0-0.2,0-0.3,0-0.5C13.2,6.4,12,5.1,10.4,5.1z M12.5,8.2c0,0.3-0.2,0.5-0.5,0.5s-0.5-0.2-0.5-0.5c0-0.8-0.6-1.4-1.4-1.4c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5C11.4,5.8,12.5,6.9,12.5,8.2zM15.7,8.8c-0.1,0.2-0.2,0.4-0.5,0.4c0,0-0.1,0-0.1,0c-0.3-0.1-0.4-0.3-0.4-0.6c0.1-0.3,0.1-0.6,0.1-0.9c0-2.3-1.9-4.2-4.2-4.2c-0.3,0-0.6,0-0.9,0.1C9.5,3.6,9.2,3.5,9.2,3.2C9.1,2.9,9.3,2.7,9.5,2.6c0.4-0.1,0.8-0.1,1.1-0.1c2.8,0,5.2,2.3,5.2,5.2C15.8,8,15.8,8.4,15.7,8.8z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="thumbnail-section">
+        <p class="thumbnail__title">Lifecycle of a fish</p>
+        <div class="category__holder">
+            <div class="thumbnail__category --secondary"></div>
+            <div class="thumbnail__category --informative"></div>
+        </div>
+        <img class="thumbnail__image" src="Images/Homepage/licensed-image.jpg" alt="">
+        <div class="flex-parent --spacebetween">
+            <div class="flex-parent">
+                <p class="thumbnail__author --graytext"> Ahmed Adam </p>
+                <p class="thumbnail__authorclass --graytext">10B</p>
+            </div>
+            <p class="thumbnail__date --graytext">12 October 2023</p>
+        </div>
+        <div class="line"></div>
+    </section>
+    <section id="writing-section" >
+        <p class="paragraph">Fish are incredible creatures that inhabit diverse aquatic environments across the globe, ranging from freshwater rivers
+        and lakes to the depths of the ocean. Their lifecycle is a marvel of adaptation and survival, showcasing a range of
+        strategies for reproduction, growth, and development. Let's delve into the stages of the fish lifecycle and explore the
+        fascinating journey these aquatic beings undergo.</p>
+        <h2 class="subheading">Egg Stage</h2>
+        <p class="paragraph">The lifecycle of a fish typically begins with the spawning process, where mature females release eggs into the water,
+        and males release sperm to fertilize the eggs. This fertilization can occur externally, in the water, or internally,
+        depending on the species.</p>
+       <p class="paragraph">Once fertilized, fish eggs are often adhesive, sticking to rocks, plants, or other surfaces in the water. Some species,
+    like salmon, lay their eggs in nests called redds, which are carefully constructed by the females. The eggs are
+    protected by a gelatinous coating that provides them with some defense against predators and environmental factors.</p>
+        <h2 class="subheading">Larval Stage</h2>
+        <p class="paragraph">After a period of incubation, which varies widely depending on the species and environmental conditions, the fish eggs
+        hatch into larvae. Larval fish are typically tiny and undergo significant transformations as they begin to feed and
+        grow. They often have specialized structures, such as yolk sacs, to provide nutrients during this early stage of
+        development.</p>
+        <p class="paragraph">During the larval stage, fish are highly vulnerable to predation and environmental changes. Many species exhibit larval
+        drift, where ocean currents or river flows carry the young fish to suitable nursery habitats where they can find food
+        and shelter.</p>
+</section>
+    <footer id="footer">
+        <div class="footer__line"></div>
+        <p class="footer__title">Contact Us:</p>
+        <p class="footer__title">Additional links:</p>
+        <p class="footer__title">Follow us:</p>
+        <div class="contacts__holder">
+            <img src="Images/Icon svgs/locationicon.svg" alt="Location">
+            <p>Jalaaluddin school,
+                Ameenee Magu, H.Dh Kulhudhuffushi, Republic of Maldives</p>
+            <img src="Images/Icon svgs/phoneicon.svg" alt="Phone number">
+            <p>775-9990, 654-8301</p>
+            <img src="Images/Icon svgs/mailicon.svg" alt="Email">
+            <p>admin@jalaluddin.edu.mv</p>
+        </div>
+        <div class="additionallinks__holder">
+            <div class="link__group flex-parent-col">
+                <a href="#" class="footer__link">News</a>
+                <a href="events.html" class="footer__link">Events</a>
+                <a href="#" class="footer__link">Blog</a>
+    
+            </div>
+            <div class="links__verticaline"></div>
+            <div class="link__group flex-parent-col">
+                <a href="#" class="footer__link">History</a>
+                <a href="#" class="footer__link">Resources</a>
+            </div>
+        </div>
+        <div class="followus__holder">
+            <a href="https://www.facebook.com/JalaluddinSchool" class="footer__link" target="_blank">
+                <svg width="30px" height="30px" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill="black"
+                        d="M20,10.1c0-5.5-4.5-10-10-10S0,4.5,0,10.1c0,5,3.7,9.1,8.4,9.9v-7H5.9v-2.9h2.5V7.9C8.4,5.4,9.9,4,12.2,4c1.1,0,2.2,0.2,2.2,0.2v2.5h-1.3c-1.2,0-1.6,0.8-1.6,1.6v1.9h2.8L13.9,13h-2.3v7C16.3,19.2,20,15.1,20,10.1z">
+                    </path>
+                </svg>
+                <p>Facebook</p>
+            </a>
+            <a href="#" class="footer__link">
+                <svg width="30px" height="30px" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill="black"
+                        d="M18.6,4.4c-0.3-1.2-1-2.2-2-2.9c-1.2-0.9-2.7-1.2-3.9-1.4C11,0,9.4-0.1,8,0.1C6.6,0.3,5.5,0.6,4.6,1c-1.9,0.9-3,2.2-3.3,4.1C1.1,6,1,6.9,0.9,7.6c-0.2,1.8,0,3.4,0.4,4.9c0.4,1.5,1.2,2.5,2.2,3.2c0.3,0.2,0.6,0.3,1,0.4c0.2,0.1,0.3,0.1,0.5,0.2v2.9C5,19.7,5.3,20,5.7,20l0,0c0.2,0,0.4-0.1,0.5-0.2l2.7-2.6C9,17,9,17,9.1,17c0.9,0,1.9-0.1,2.8-0.1c1.1-0.1,2.5-0.2,3.7-0.7c1.1-0.5,2-1.2,2.5-2.2c0.5-1.1,0.8-2.2,0.9-3.5C19.3,8.2,19.1,6.2,18.6,4.4z M13.9,13.1c-0.3,0.4-0.7,0.8-1.2,1c-0.4,0.1-0.7,0.1-1.1,0C8.8,12.8,6.5,10.9,5,8.1C4.7,7.5,4.5,6.9,4.2,6.3C4.2,6.2,4.2,6,4.2,5.9c0-1,0.8-1.5,1.5-1.7c0.3-0.1,0.5,0,0.8,0.2c0.6,0.6,1.1,1.2,1.4,2C8,6.7,8,7,7.7,7.2C7.6,7.3,7.6,7.3,7.5,7.4C6.9,7.8,6.8,8.2,7.2,8.9c0.5,1.2,1.5,1.9,2.6,2.4c0.3,0.1,0.6,0.1,0.8-0.2c0,0,0.1-0.1,0.1-0.1c0.5-0.8,1.1-0.7,1.8-0.3c0.4,0.3,0.8,0.6,1.2,0.9C14.3,12.1,14.3,12.5,13.9,13.1z M10.4,5.1c-0.2,0-0.3,0-0.5,0C9.7,5.2,9.5,5,9.4,4.8c0-0.3,0.1-0.5,0.4-0.5c0.2,0,0.4-0.1,0.6-0.1c2.1,0,3.7,1.7,3.7,3.7c0,0.2,0,0.4-0.1,0.6c0,0.2-0.2,0.4-0.5,0.4c0,0-0.1,0-0.1,0c-0.3,0-0.4-0.3-0.4-0.5c0-0.2,0-0.3,0-0.5C13.2,6.4,12,5.1,10.4,5.1z M12.5,8.2c0,0.3-0.2,0.5-0.5,0.5s-0.5-0.2-0.5-0.5c0-0.8-0.6-1.4-1.4-1.4c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5C11.4,5.8,12.5,6.9,12.5,8.2zM15.7,8.8c-0.1,0.2-0.2,0.4-0.5,0.4c0,0-0.1,0-0.1,0c-0.3-0.1-0.4-0.3-0.4-0.6c0.1-0.3,0.1-0.6,0.1-0.9c0-2.3-1.9-4.2-4.2-4.2c-0.3,0-0.6,0-0.9,0.1C9.5,3.6,9.2,3.5,9.2,3.2C9.1,2.9,9.3,2.7,9.5,2.6c0.4-0.1,0.8-0.1,1.1-0.1c2.8,0,5.2,2.3,5.2,5.2C15.8,8,15.8,8.4,15.7,8.8z">
+                    </path>
+                </svg>
+                <p>Viber</p>
+            </a>
+    
+        </div>
+    </footer>
+</body>
+
+</html>

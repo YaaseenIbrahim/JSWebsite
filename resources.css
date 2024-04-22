@@ -1,0 +1,63 @@
+/* CSS for resources page */
+section{
+    margin: 0 4.5%;
+}
+.resources__title{
+    font-family: Outfit Bold;
+    font-size: 2rem;
+    margin: 3rem auto auto auto;
+        width: fit-content;
+}
+.resources__caption{
+    margin: auto auto 6rem auto;
+    width: fit-content;
+}
+.resources__subheading{
+    font-family: Outfit Semibold;
+}
+.resources__subheading.--margin{
+    margin-bottom: 2rem;
+}
+a{
+    text-decoration: underline;
+    
+}
+.resources__block{
+    margin: 3rem 0;
+}
+
+
+input {
+    display: none;
+}
+
+label {
+    display: block;
+    padding: 8px 22px;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    background: #4e8771;
+    border-radius: 3px;
+    color: #FFF;
+    transition: ease .5s;
+}
+
+label:hover {
+    background: #73c9ac;
+}
+
+.content {
+    background: #E2E5F6;
+    padding: 10px 25px;
+
+    margin: 0 0 1px 0;
+    border-radius: 3px;
+}
+
+input+label+.content {
+    display: none;
+}
+
+input:checked+label+.content {
+    display: block;
+}
