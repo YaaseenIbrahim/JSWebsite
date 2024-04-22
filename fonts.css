@@ -6,6 +6,16 @@
 }
 
 @font-face {
+    font-family: MV Mag Round;
+    src: url(Fonts/Mv_MAG_Round_Bold.otf);
+}
+
+@font-face {
+    font-family: MV Waheed;
+    src: url(Fonts/MVWaheed.otf);
+}
+
+@font-face {
     font-family: Outfit;
     src: url(Fonts/Outfit/Outfit-Regular.ttf);
 }
@@ -14,14 +24,17 @@
     font-family: Outfit Bold;
     src: url(Fonts/Outfit/Outfit-Bold.ttf);
 }
+
 @font-face {
     font-family: Outfit Semibold;
     src: url(Fonts/Outfit/Outfit-SemiBold.ttf);
 }
+
 @font-face {
     font-family: Outfit Light;
     src: url(Fonts/Outfit/Outfit-Light.ttf);
 }
+
 @font-face {
     font-family: Outfit Thin;
     src: url(Fonts/Outfit/Outfit-Thin.ttf);

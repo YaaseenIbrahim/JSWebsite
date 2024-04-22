@@ -42,7 +42,12 @@ body{
     -ms-user-select: none;
     user-select: none;
 }
-
+.--dhivehi{
+    direction: rtl;
+}
+.--graytext{
+    color: gray;
+}
 /* ----------------------- */
 /* Navbar */
 
@@ -53,8 +58,15 @@ body{
 }
 
 .banner__nav.--colored {
-    background: #E43A3A;
-    /* background: linear-gradient(180deg, #EE5A5A 0%, #E43A3A 36%, #D00D0D 94%); */
+    /* background: #E43A3A; */
+/* Rectangle 1 */
+/* Rectangle 1 */
+
+
+    background: linear-gradient(270deg, #E01E37 0%, rgba(240, 82, 108, 0.909994) 92.79%, rgba(255, 133, 161, 0.82) 100%);
+
+    /* background: linear-gradient(270deg, #E01E37 55.3%, rgba(240, 82, 108, 0.909994) 96.66%, rgba(255, 133, 161, 0.82) 100%); */
+    
 
 }
 
