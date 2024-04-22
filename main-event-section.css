@@ -6,10 +6,6 @@
     align-items: center;
 }
 
-/* #maineventSection > * {
-    border: 1px solid blue;
-} */
-
 .mainevent {
     margin-top: 2rem;
 }
@@ -101,7 +97,7 @@
 @media (max-width: 550px) {
     .mainevent__image {
         width: 70vw;
-        height: 90vh;
+        height: 70vh;
     }
 
     .mainevent__title {

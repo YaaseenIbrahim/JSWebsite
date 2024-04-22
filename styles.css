@@ -8,9 +8,11 @@
     text-decoration: none;
     font-family: Outfit, Faruma;
 }
-body{
+
+body {
     overflow: none;
 }
+
 /* Some Quick classes for usually re-used things */
 .flex-parent {
     display: flex;
@@ -42,12 +44,15 @@ body{
     -ms-user-select: none;
     user-select: none;
 }
-.--dhivehi{
+
+.--dhivehi {
     direction: rtl;
 }
-.--graytext{
+
+.--graytext {
     color: gray;
 }
+
 /* ----------------------- */
 /* Navbar */
 
@@ -55,18 +60,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .banner__nav.--colored {
-    /* background: #E43A3A; */
-/* Rectangle 1 */
-/* Rectangle 1 */
-
-
     background: linear-gradient(270deg, #E01E37 0%, rgba(240, 82, 108, 0.909994) 92.79%, rgba(255, 133, 161, 0.82) 100%);
-
-    /* background: linear-gradient(270deg, #E01E37 55.3%, rgba(240, 82, 108, 0.909994) 96.66%, rgba(255, 133, 161, 0.82) 100%); */
-    
 
 }
 
@@ -77,12 +75,15 @@ body{
 
 .banner__linksholder {
     margin: auto;
+    display: flex;
 }
 
-.banner__links {
+.banner__links,
+.banner__dropdownlink {
     font-size: 1.1rem;
     color: white;
     margin: 0 2.5rem;
+    cursor: pointer;
     position: relative;
 }
 
@@ -127,6 +128,40 @@ body{
     display: none;
 }
 
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-top: 1rem;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
 .close__button {
     position: absolute;
     top: 0;
@@ -148,7 +183,7 @@ body{
     width: 20%;
     height: 100%;
     display: none;
-    z-index: 2;
+    z-index: 100;
     top: 0;
 }
 
@@ -163,6 +198,7 @@ body{
     position: fixed;
     right: 0;
     background-color: rgb(172, 38, 38);
+
     width: 80%;
     height: 100%;
     display: flex;
@@ -181,7 +217,7 @@ body{
     justify-content: left;
     align-items: left;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin-left: 1rem;
 }
 
@@ -189,6 +225,7 @@ body{
     color: white;
     font-size: 1.2rem;
     margin-bottom: 1.8rem;
+    position: relative;
     width: 100%;
 }
 
@@ -208,6 +245,7 @@ body{
     position: fixed;
     z-index: 1;
 }
+
 /* Footer */
 #footer {
     display: grid;
@@ -276,14 +314,67 @@ body{
     gap: 1rem;
 }
 
+/* Dropdown */
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+#cssmenu {
+    width: 100%;
+}
+
+#cssmenu ul ul {
+    display: none;
+}
+
+/* First level */
+#cssmenu>ul>li>a {
+    cursor: pointer;
+    margin-bottom: 1.8rem;
+    z-index: 2;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+}
+
+
+#cssmenu ul li ul li {
+    color: wheat;
+    display: list-item;
+    margin-left: 2rem;
+    margin-bottom: 1.8rem;
+    list-style-type: style hol;
+}
+
+#cssmenu ul ul li a {
+    cursor: pointer;
+    z-index: 2;
+    color: white;
+    -webkit-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+}
 
 
 
 
 /* ------------ */
-@media (max-width:915px) {
-    .banner__links {
+@media (max-width:1050px) {
+
+    .banner__links,
+    .banner__dropdownlink {
         font-size: 1rem;
         margin: 0 1.5rem;
     }
@@ -307,7 +398,7 @@ body{
     }
 }
 
-@media (max-width:750px) {
+@media (max-width:800px) {
 
 
     .banner__linksholder {
@@ -335,6 +426,17 @@ body{
     #footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:650px) {
+    .banner__linksholder {
+        display: none;
+    }
+
+    .banner__menuicon {
+        display: inline-block;
+        margin-right: 2rem;
     }
 }
 
@@ -368,12 +470,5 @@ body{
 
     }
 
-    .banner__linksholder {
-        display: none;
-    }
 
-    .banner__menuicon {
-        display: inline-block;
-        margin-right: 2rem;
-    }
 }

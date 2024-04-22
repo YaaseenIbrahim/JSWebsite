@@ -19,7 +19,9 @@
     margin-bottom: 1rem;
     border-radius: 45px;
 }
-
+.thumbnail__image.--mobile {
+    display: none;
+}
 .category__holder {
     display: flex;
     gap: 0.75rem;
@@ -31,7 +33,7 @@
     padding: 0.2rem 1rem;
     border-radius: 20px;
 }
-.thumbnail__category--dhivehi:before {
+#thumbnail-section.--dhivehi .thumbnail__category:before{
     padding: 0.2rem 2rem;
 }
 
@@ -96,13 +98,11 @@
     text-align: justify;
     font-size: 1.2rem;
     text-indent: 2rem;
-    line-height: 1.6rem;
 }
 #writing-section.--dhivehi p {
     font-family: MV Waheed;
     font-size: 1.3rem;
     text-indent: 4rem;
-    line-height: 2rem;
 }
 .subheading{
     margin: 3rem 0;
@@ -113,4 +113,14 @@
 }
 .paragraph + .paragraph {
     margin: 1rem 0;
+}
+
+@media (max-width:750px){
+    .thumbnail__image{
+        display: none;
+    }
+    .thumbnail__image.--mobile{
+        display: block;
+    }
+
 }

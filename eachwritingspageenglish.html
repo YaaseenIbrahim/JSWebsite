@@ -5,11 +5,11 @@
     <title>Lifecycle of a fish</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="eachwritingspage.css">
-
     <link rel="icon" href="Images/Logos/School Logo.png" type="/icon.png">
     <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 </head>
 
@@ -21,8 +21,22 @@
         <div class="banner__linksholder ">
             <a href="#" class="banner__links ">News</a>
             <a href="events.html" class="banner__links">Events</a>
-            <a href="#" class="banner__links">SLC</a>
+
+            <div class="dropdown">
+                <p class="banner__dropdownlink">Writings<svg style="right:-20px; position:absolute; top:5px;" width="15"
+                        height="15" fill="white" viewBox="0 0 15 15">
+                        <path d="M3.9,5.1l3.6,3.6l3.6-3.6l1.4,0.7l-5,5l-5-5L3.9,5.1z" />
+                    </svg> </p>
+
+                <div class="dropdown-content">
+                    <a href="#">English Writings</a>
+                    <a href="#">Dhivehi Writings</a>
+                </div>
+            </div>
+
             <a href="#" class="banner__links">History</a>
+            <a href="resources.html" class="banner__links">Resources</a>
+
         </div>
         <div class="banner__socialsholder flex-parent">
             <a href="https://www.facebook.com/JalaluddinSchool" class="banner__sociallinks" target="_blank">
@@ -47,14 +61,29 @@
             <div class="sidemenu">
                 <div class="close__button noselect" onclick="closeThing(sidemenuArea)">&times;</div>
 
-                <a class="flex-parent" href="#">
+                <a class="flex-parent" href="index.html">
                     <img src="Images/Logos/Full-logo-whitelogo-whitetext.png" alt="logo"
                         class="sidemenu__logo noselect">
                 </a>
                 <div class="sidemenu__linksholder ">
                     <a href="#" class="sidemenu__links ">News</a>
                     <a href="events.html" class="sidemenu__links">Events</a>
-                    <a href="#" class="sidemenu__links">SLC</a>
+                    <div id='cssmenu'>
+                        <ul>
+                            <li class='has-sub sidemenu__links'><a>Writings </a><svg
+                                    style="right:40px; position:absolute; top:0;" width="15" height="15" fill="white"
+                                    viewBox="0 0 15 15">
+                                    <path d="M3.9,5.1l3.6,3.6l3.6-3.6l1.4,0.7l-5,5l-5-5L3.9,5.1z" />
+                                </svg>
+                                <ul>
+                                    <li><a href='#' target="_blank">English Writings</a></li>
+                                    <li><a href='#' target="_blank">Dhivehi Writings</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="resources.html" class="sidemenu__links">Resources</a>
                     <a href="#" class="sidemenu__links">History</a>
                 </div>
                 <div class="sidemenu__socialsholder">
@@ -78,6 +107,8 @@
         </div>
     </nav>
     <section id="thumbnail-section">
+        <img class="thumbnail__image --mobile" src="Images/Homepage/licensed-image.jpg" alt="">
+
         <p class="thumbnail__title">Lifecycle of a fish</p>
         <div class="category__holder">
             <div class="thumbnail__category --secondary"></div>
@@ -93,27 +124,40 @@
         </div>
         <div class="line"></div>
     </section>
-    <section id="writing-section" >
-        <p class="paragraph">Fish are incredible creatures that inhabit diverse aquatic environments across the globe, ranging from freshwater rivers
-        and lakes to the depths of the ocean. Their lifecycle is a marvel of adaptation and survival, showcasing a range of
-        strategies for reproduction, growth, and development. Let's delve into the stages of the fish lifecycle and explore the
-        fascinating journey these aquatic beings undergo.</p>
+    <section id="writing-section">
+        <p class="paragraph">Fish are incredible creatures that inhabit diverse aquatic environments across the globe,
+            ranging from freshwater rivers
+            and lakes to the depths of the ocean. Their lifecycle is a marvel of adaptation and survival, showcasing a
+            range of
+            strategies for reproduction, growth, and development. Let's delve into the stages of the fish lifecycle and
+            explore the
+            fascinating journey these aquatic beings undergo.</p>
         <h2 class="subheading">Egg Stage</h2>
-        <p class="paragraph">The lifecycle of a fish typically begins with the spawning process, where mature females release eggs into the water,
-        and males release sperm to fertilize the eggs. This fertilization can occur externally, in the water, or internally,
-        depending on the species.</p>
-       <p class="paragraph">Once fertilized, fish eggs are often adhesive, sticking to rocks, plants, or other surfaces in the water. Some species,
-    like salmon, lay their eggs in nests called redds, which are carefully constructed by the females. The eggs are
-    protected by a gelatinous coating that provides them with some defense against predators and environmental factors.</p>
+        <p class="paragraph">The lifecycle of a fish typically begins with the spawning process, where mature females
+            release eggs into the water,
+            and males release sperm to fertilize the eggs. This fertilization can occur externally, in the water, or
+            internally,
+            depending on the species.</p>
+        <p class="paragraph">Once fertilized, fish eggs are often adhesive, sticking to rocks, plants, or other surfaces
+            in the water. Some species,
+            like salmon, lay their eggs in nests called redds, which are carefully constructed by the females. The eggs
+            are
+            protected by a gelatinous coating that provides them with some defense against predators and environmental
+            factors.</p>
         <h2 class="subheading">Larval Stage</h2>
-        <p class="paragraph">After a period of incubation, which varies widely depending on the species and environmental conditions, the fish eggs
-        hatch into larvae. Larval fish are typically tiny and undergo significant transformations as they begin to feed and
-        grow. They often have specialized structures, such as yolk sacs, to provide nutrients during this early stage of
-        development.</p>
-        <p class="paragraph">During the larval stage, fish are highly vulnerable to predation and environmental changes. Many species exhibit larval
-        drift, where ocean currents or river flows carry the young fish to suitable nursery habitats where they can find food
-        and shelter.</p>
-</section>
+        <p class="paragraph">After a period of incubation, which varies widely depending on the species and
+            environmental conditions, the fish eggs
+            hatch into larvae. Larval fish are typically tiny and undergo significant transformations as they begin to
+            feed and
+            grow. They often have specialized structures, such as yolk sacs, to provide nutrients during this early
+            stage of
+            development.</p>
+        <p class="paragraph">During the larval stage, fish are highly vulnerable to predation and environmental changes.
+            Many species exhibit larval
+            drift, where ocean currents or river flows carry the young fish to suitable nursery habitats where they can
+            find food
+            and shelter.</p>
+    </section>
     <footer id="footer">
         <div class="footer__line"></div>
         <p class="footer__title">Contact Us:</p>
@@ -132,13 +176,16 @@
             <div class="link__group flex-parent-col">
                 <a href="#" class="footer__link">News</a>
                 <a href="events.html" class="footer__link">Events</a>
-                <a href="#" class="footer__link">Blog</a>
-    
+                <a href="resources.html" class="footer__link">Resources</a>
+
+
             </div>
             <div class="links__verticaline"></div>
             <div class="link__group flex-parent-col">
                 <a href="#" class="footer__link">History</a>
-                <a href="#" class="footer__link">Resources</a>
+                <a href="#" class="footer__link">English Writings</a>
+                <a href="#" class="footer__link">Dhivehi Writings</a>
+
             </div>
         </div>
         <div class="followus__holder">
@@ -158,7 +205,6 @@
                 </svg>
                 <p>Viber</p>
             </a>
-    
         </div>
     </footer>
 </body>

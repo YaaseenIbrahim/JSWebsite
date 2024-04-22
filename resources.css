@@ -10,6 +10,7 @@ section{
 }
 .resources__caption{
     margin: auto auto 6rem auto;
+    text-align: center;
     width: fit-content;
 }
 .resources__subheading{
@@ -18,12 +19,10 @@ section{
 .resources__subheading.--margin{
     margin-bottom: 2rem;
 }
-a{
-    text-decoration: underline;
-    
-}
+
 .resources__block{
     margin: 3rem 0;
+    overflow-wrap: break-word;
 }
 
 
@@ -60,4 +59,80 @@ input+label+.content {
 
 input:checked+label+.content {
     display: block;
+}
+
+
+/* -- */
+#cssmenu.--resources>ul>li>a {
+    background: #186b46;
+    font-size: 16px;
+    margin: 0;
+    padding: 16px 22px;
+}
+
+#cssmenu.--resources>ul>li>a:hover {
+    color: whitesmoke;
+}
+
+
+#cssmenu.--resources ul>li.has-sub>a:after {
+    position: absolute;
+    right: 26px;
+    top: 19px;
+    z-index: 5;
+    height: 10px;
+    width: 2px;
+    background: #ffffff;
+    content: "";
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+#cssmenu.--resources ul>li.has-sub>a:before {
+    position: absolute;
+    right: 22px;
+    top: 23px;
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: #ffffff;
+    content: "";
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+#cssmenu.--resources ul>li.has-sub.open>a:after,
+#cssmenu.--resources ul>li.has-sub.open>a:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#cssmenu.--resources ul ul li a {
+    background: gray;
+    padding: 14px 22px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+
+
+#cssmenu.--resources ul ul li a:hover {
+    color: #ffffff;
+}
+ 
+
+#cssmenu.--resources ul ul>li.has-sub>a:before {
+    top: 20px;
+    background: #dddddd;
+}
+#cssmenu.--resources ul li ul li{
+    margin: 0;
 }

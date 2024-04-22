@@ -5,11 +5,11 @@
     <title></title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="eachwritingspage.css">
-
     <link rel="icon" href="Images/Logos/School Logo.png" type="/icon.png">
     <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 </head>
 
@@ -21,8 +21,22 @@
         <div class="banner__linksholder ">
             <a href="#" class="banner__links ">News</a>
             <a href="events.html" class="banner__links">Events</a>
-            <a href="#" class="banner__links">SLC</a>
+
+            <div class="dropdown">
+                <p class="banner__dropdownlink">Writings<svg style="right:-20px; position:absolute; top:5px;" width="15"
+                        height="15" fill="white" viewBox="0 0 15 15">
+                        <path d="M3.9,5.1l3.6,3.6l3.6-3.6l1.4,0.7l-5,5l-5-5L3.9,5.1z" />
+                    </svg> </p>
+
+                <div class="dropdown-content">
+                    <a href="#">English Writings</a>
+                    <a href="#">Dhivehi Writings</a>
+                </div>
+            </div>
+
             <a href="#" class="banner__links">History</a>
+            <a href="resources.html" class="banner__links">Resources</a>
+
         </div>
         <div class="banner__socialsholder flex-parent">
             <a href="https://www.facebook.com/JalaluddinSchool" class="banner__sociallinks" target="_blank">
@@ -47,14 +61,29 @@
             <div class="sidemenu">
                 <div class="close__button noselect" onclick="closeThing(sidemenuArea)">&times;</div>
 
-                <a class="flex-parent" href="#">
+                <a class="flex-parent" href="index.html">
                     <img src="Images/Logos/Full-logo-whitelogo-whitetext.png" alt="logo"
                         class="sidemenu__logo noselect">
                 </a>
                 <div class="sidemenu__linksholder ">
                     <a href="#" class="sidemenu__links ">News</a>
                     <a href="events.html" class="sidemenu__links">Events</a>
-                    <a href="#" class="sidemenu__links">SLC</a>
+                    <div id='cssmenu'>
+                        <ul>
+                            <li class='has-sub sidemenu__links'><a>Writings </a><svg
+                                    style="right:40px; position:absolute; top:0;" width="15" height="15" fill="white"
+                                    viewBox="0 0 15 15">
+                                    <path d="M3.9,5.1l3.6,3.6l3.6-3.6l1.4,0.7l-5,5l-5-5L3.9,5.1z" />
+                                </svg>
+                                <ul>
+                                    <li><a href='#' target="_blank">English Writings</a></li>
+                                    <li><a href='#' target="_blank">Dhivehi Writings</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="resources.html" class="sidemenu__links">Resources</a>
                     <a href="#" class="sidemenu__links">History</a>
                 </div>
                 <div class="sidemenu__socialsholder">
@@ -78,6 +107,8 @@
         </div>
     </nav>
     <section id="thumbnail-section" class="--dhivehi">
+        <img class="thumbnail__image --mobile" src="Images/Eachwritings/sleep.png" alt="">
+
         <p class="thumbnail__title">ގަޑިން ގަޑިއަށް ނިދުމަކީ ހަމަ އެހާ މުހިންމު ކަމެއްތަ؟</p>
         <div class="category__holder">
             <div class="thumbnail__category --saanavee"></div>
@@ -94,19 +125,26 @@
         <div class="line"></div>
     </section>
     <section id="writing-section" class=" --dhivehi">
-        <p class="paragraph">އިންސާނާގެ އަސާސީ ބޭނުންތެރިކަމެއް ކަމަށްވާ ނިދުމަކީ އަހަރެމެންގެ ޖުމްލަ ސިއްހަތާއި ދުޅަހެޔޮކަން ދެމެހެއްޓުމުގައި ވަރަށް
-        މުހިންމު ދައުރެއް އަދާކުރާ އެއްޗެކެވެ. އެއީ އަހަރެމެންގެ ހަށިގަނޑާއި ސިކުނޑި ޒުވާންވެ، ރަނގަޅުވެ، ބޮޑުވުމަށް
-        މަގުފަހިކޮށްދޭ ރިސްޓޯރޭޓިވް ޕްރޮސެސްއެކެވެ. މުހިންމުކަން ބޮޑު ނަމަވެސް، އަޅުގަނޑުމެންގެ ބާރު ސްޕީޑުގައި ދުއްވާ
-        މުޖުތަމަޢުގައި، ޚާއްޞަކޮށް ދިވެހީރާއްޖޭގެ އާބާދީ ބޮޑު ސަރަޙައްދުތަކުގައި، ނިދި ގިނަ ފަހަރަށް ފާހަގަ ނުކުރެވެއެވެ. މި
-        މަޒުމޫނުގެ މަޤްޞަދަކީ ނިދުމުގެ މުހިންމުކަމާއި، އެކަމުގެ ސަބަބުން އަޅުގަނޑުމެންގެ ދިރިއުޅުމަށް ކުރާ އަސަރަށް
-        އަލިއަޅުވާލުމެވެ.</p>
+        <p class="paragraph">އިންސާނާގެ އަސާސީ ބޭނުންތެރިކަމެއް ކަމަށްވާ ނިދުމަކީ އަހަރެމެންގެ ޖުމްލަ ސިއްހަތާއި
+            ދުޅަހެޔޮކަން ދެމެހެއްޓުމުގައި ވަރަށް
+            މުހިންމު ދައުރެއް އަދާކުރާ އެއްޗެކެވެ. އެއީ އަހަރެމެންގެ ހަށިގަނޑާއި ސިކުނޑި ޒުވާންވެ، ރަނގަޅުވެ، ބޮޑުވުމަށް
+            މަގުފަހިކޮށްދޭ ރިސްޓޯރޭޓިވް ޕްރޮސެސްއެކެވެ. މުހިންމުކަން ބޮޑު ނަމަވެސް، އަޅުގަނޑުމެންގެ ބާރު ސްޕީޑުގައި
+            ދުއްވާ
+            މުޖުތަމަޢުގައި، ޚާއްޞަކޮށް ދިވެހީރާއްޖޭގެ އާބާދީ ބޮޑު ސަރަޙައްދުތަކުގައި، ނިދި ގިނަ ފަހަރަށް ފާހަގަ
+            ނުކުރެވެއެވެ. މި
+            މަޒުމޫނުގެ މަޤްޞަދަކީ ނިދުމުގެ މުހިންމުކަމާއި، އެކަމުގެ ސަބަބުން އަޅުގަނޑުމެންގެ ދިރިއުޅުމަށް ކުރާ އަސަރަށް
+            އަލިއަޅުވާލުމެވެ.</p>
         <h2 class="subheading">ނިދީގެ ދިރާސާތައް</h2>
-        <p class="paragraph">ސައިންސްވެރިންގެ ދިރާސާތަކުން ނިދީގެ ސައިކަލްގެ ދިގުމިންވެސް އެކި މީހުންގެ ތަފާތުވާކަން ފާހަގަ ކުރެވިފައިވެއެވެ. އެއީ 70
-        އާއި 110 މިނެޓާއި ދެމެދުގެ ސައިކަލްތަކެވެ. އެގޮތުން ބައެއް މީހުންނަށް 90 މިނެޓް ވާއިރު އަނެއް ބަޔަކަށް އެއްށްވުރެ މަދު
-        ނޫނީ ގިނަ ވަގުތު ހޭދަވާކަމަށް ބެލެވެއެވެ.</p>
-        <p class="paragraph">ސައިންސްވެރިންގެ ދިރާސާތަކުން ނިދީގެ ސައިކަލްގެ ދިގުމިންވެސް އެކި މީހުންގެ ތަފާތުވާކަން ފާހަގަ
+        <p class="paragraph">ސައިންސްވެރިންގެ ދިރާސާތަކުން ނިދީގެ ސައިކަލްގެ ދިގުމިންވެސް އެކި މީހުންގެ ތަފާތުވާކަން
+            ފާހަގަ ކުރެވިފައިވެއެވެ. އެއީ 70
+            އާއި 110 މިނެޓާއި ދެމެދުގެ ސައިކަލްތަކެވެ. އެގޮތުން ބައެއް މީހުންނަށް 90 މިނެޓް ވާއިރު އަނެއް ބަޔަކަށް
+            އެއްށްވުރެ މަދު
+            ނޫނީ ގިނަ ވަގުތު ހޭދަވާކަމަށް ބެލެވެއެވެ.</p>
+        <p class="paragraph">ސައިންސްވެރިންގެ ދިރާސާތަކުން ނިދީގެ ސައިކަލްގެ ދިގުމިންވެސް އެކި މީހުންގެ ތަފާތުވާކަން
+            ފާހަގަ
             ކުރެވިފައިވެއެވެ. އެއީ 70
-            އާއި 110 މިނެޓާއި ދެމެދުގެ ސައިކަލްތަކެވެ. އެގޮތުން ބައެއް މީހުންނަށް 90 މިނެޓް ވާއިރު އަނެއް ބަޔަކަށް އެއްށްވުރެ
+            އާއި 110 މިނެޓާއި ދެމެދުގެ ސައިކަލްތަކެވެ. އެގޮތުން ބައެއް މީހުންނަށް 90 މިނެޓް ވާއިރު އަނެއް ބަޔަކަށް
+            އެއްށްވުރެ
             މަދު
             ނޫނީ ގިނަ ވަގުތު ހޭދަވާކަމަށް ބެލެވެއެވެ.</p>
     </section>
@@ -128,13 +166,16 @@
             <div class="link__group flex-parent-col">
                 <a href="#" class="footer__link">News</a>
                 <a href="events.html" class="footer__link">Events</a>
-                <a href="#" class="footer__link">Blog</a>
-    
+                <a href="resources.html" class="footer__link">Resources</a>
+
+
             </div>
             <div class="links__verticaline"></div>
             <div class="link__group flex-parent-col">
                 <a href="#" class="footer__link">History</a>
-                <a href="#" class="footer__link">Resources</a>
+                <a href="#" class="footer__link">English Writings</a>
+                <a href="#" class="footer__link">Dhivehi Writings</a>
+
             </div>
         </div>
         <div class="followus__holder">
@@ -154,7 +195,6 @@
                 </svg>
                 <p>Viber</p>
             </a>
-    
         </div>
     </footer>
 </body>
