@@ -52,7 +52,9 @@ body {
 .--graytext {
     color: gray;
 }
-
+.--capitalize{
+    text-transform: capitalize;
+}
 /* ----------------------- */
 /* Navbar */
 
