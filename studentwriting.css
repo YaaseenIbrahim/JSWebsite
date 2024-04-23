@@ -1,23 +1,25 @@
-.container-1{
-    /* border: 2px solid black; */
-    height: 400px;
-    width: 100%;
+.mainwriting{
     display: grid;
-    grid-template-columns: repeat(12, 170px);
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 7.5%;
+    gap: 1rem;
 }
 
-.main-img{
+.mainwriting__img{
     width: 500px;
     height: 330px;
     border-radius: 38px;    
-    grid-column: 2;
     margin-top: 40px;
 }
 
-.text{
-    text-align: justify;
-    margin-top: 40px;
-    grid-column: 5 / 8;
+.mainwriting__textcontainer{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    flex-direction: column;
 }
 
 p{
@@ -25,7 +27,7 @@ p{
 }
 
 /* breaker */
-.breaker{
+.line{
     position: relative;
     height: 8px;
     margin-top: 40px;
@@ -39,9 +41,9 @@ p{
     margin-top: 12px;
     margin-left: 40px;
     margin-right: 40px;
-    display: grid;
-    grid-template-columns: repeat(3,150px);
+    grid-template-columns: auto auto auto;
     gap: .2rem;
+    display:grid
 }
 
 .middle-school{
@@ -53,10 +55,10 @@ p{
     font-weight: 650;
     letter-spacing: 1px;
     color: #000000;
+    flex-direction: row;
 }
 
 .lower-secondary{
-    /* padding-left: 12px; */
     padding-right: 12px;
     height: 36px;
     width: autopx;
@@ -82,16 +84,15 @@ p{
     color: #000000;
 }
 
-.featured-container{
+.featured-writings-title-container{
     display: block;
-    /* border: 2px solid black; */
     height: 36px;
     width: auto;
     margin-top: 15px;
     margin-left: 40px;
 }
 
-.featured{
+.featuredwritings__title{
     display: inline-block;
     font-size: 30px;
     font-weight: 900;
@@ -99,8 +100,7 @@ p{
     color: #351e00;
 }
 
-.feature-underline{
-    /* border: 2px solid black; */
+.featuredwritings__underline{
     height: 5px;
     width: 105px;
     border-radius: 10px;
@@ -109,47 +109,46 @@ p{
 
 }
 
-.card-container{
-    /* border: 2px solid black; */
-    height: 338px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 20px;
+.featuredcontainer{
+    margin: 2rem 7.5%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1rem;
-    justify-items: center;
-    align-items:   center;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-auto-flow: auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+
 }
 
-.card-box{
+.featuredcontainer__card{
     height: 100%;
     width: 250px;
     background-color:#f5d3d8 ;
     border-radius: 15px;
 }
 
-.card-img{
+.featuredcontainer__image{
     margin-top: 18px;
     margin-left: 18px;
+    margin-right: 18px;
     width: 214px;
     height: 219px;
     border-radius: 15px;
     display: cover;
+
 }
 
-.card-text{
+.featuredcontainer__title{
     margin:18px ;
 
 }
 
 .recent-works-container{
-    display: block;
-    /* border: 2px solid black; */
-    height: 36px;
-    width: auto;
-    margin-top: 22px;
-    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-column: 1 / 4;
 }
 
 .recent-works{
@@ -158,10 +157,11 @@ p{
     font-weight: 900;
     letter-spacing: 1px;
     color: #351e00;
+    margin-left: 40px;
+
 }
 
 .recent-works-underline{
-    /* border: 2px solid black; */
     height: 5px;
     width: 125px;
     border-radius: 10px;
@@ -170,23 +170,162 @@ p{
 
 }
 
-.recent-card-container{
-    /* border: 2px solid black; */
+.recent-works-section{
     height: 676px;
-    margin-top:22px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 2rem 7.5%;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
     gap: 1rem;
     justify-items: center;
-    align-items:   center;}
+    align-items:   center;
+}
 
-.card-box-2{
+.recentworks__card{
     border-radius: 15px;
     background-color:#bacd8e ;
     /* border: 2px solid pink; */
     height: 100%;
     width: 250px;
+}
+
+/* Laptop 1024px */
+@media (max-width:1025px){
+    .featuredcontainer{
+        width: fit-content;
+        margin-bottom: 3rem;
+    }
+
+    
+    .featuredcontainer__card{
+        width: 100%;
+    }
+
+    .featuredcontainer__image{
+        width: 85%;
+    }
+
+
+    .recent-works-section{
+        width: fit-content;
+        margin-bottom: 3rem;
+    }
+  
+    .recentworks__card{
+        width: 100%;
+    }
+
+}
+
+/* tablet 768px */
+@media (max-width:769px){
+    .mainwriting{
+        grid-template-columns: repeat(1, auto);
+        margin: 4rem ;
+    }
+
+    .mainwriting__img{
+        width: 100%;
+    }
+
+    .featuredcontainer{
+        margin-bottom: 2rem;
+        height: auto;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+
+    .recent-works-section{
+        grid-template-columns: repeat(3,1fr);
+        height: auto;
+
+    }
+
+}
+
+/* mobile Large */
+@media (max-width: 426px){
+    .mainwriting{
+        margin: auto;
+        width: 50%;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .mainwriting__img{
+        width: 360px;
+
+    }
+
+    .button-div{
+        margin-left: 30px;
+    }
+
+    .middle-school, .lower-secondary, .higher-secondary{
+        width: 110px;
+        font-size: .8rem;
+    }
+   
+    .featuredcontainer{
+        margin-bottom: 2rem;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .featuredcontainer__title{
+        font-size: .85rem;
+    }
+
+    .recent-works-section{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}
+
+/* mobile medium */
+@media (max-width: 376px){
+    .mainwriting{
+        width: auto;
+        margin: 1.1rem;
+        text-align: center;
+
+        
+    }
+
+    .mainwriting__img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+}
+
+
+/* mobile small */
+@media (max-width: 321px){
+   .mainwriting{
+    margin: 4rem 7.5%;
+    width: 100%;
+    text-align: center;
+   }
+
+   .line{
+   width: 100%;
+   margin: 1rem;
+   }
+
+   .button-div{
+    width: 100%;
+    margin: 1rem;
+   }
+
+
+   .featuredcontainer{
+    width: 100%;
+   }
+
+   .recent-works-section{
+    width: 100%;
+   }
 }
