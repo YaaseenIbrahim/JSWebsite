@@ -348,8 +348,13 @@ body {
     -o-transition: color .2s ease;
     transition: color .2s ease;
 }
-
-
+/* Second level */
+#cssmenu.--resources>ul>li>ul>li>a {
+    text-decoration: none;
+}
+#cssmenu>ul>li.active>ul {
+    display: block;
+}
 #cssmenu ul li ul li {
     color: wheat;
     display: list-item;

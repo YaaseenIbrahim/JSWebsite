@@ -73,13 +73,16 @@ input:checked+label+.content {
 #cssmenu.--resources>ul>li>a:hover {
     color: whitesmoke;
 }
+#cssmenu.--resources ul li ul li{
+    display: block;
+}
 
-
-#cssmenu.--resources ul>li.has-sub>a:after {
+#cssmenu.--resources ul > li.has-sub> a:after {
     position: absolute;
     right: 26px;
     top: 19px;
     z-index: 5;
+    display: block;
     height: 10px;
     width: 2px;
     background: #ffffff;
@@ -90,8 +93,10 @@ input:checked+label+.content {
     -o-transition: all 0.1s ease-out;
     transition: all 0.1s ease-out;
 }
-
-#cssmenu.--resources ul>li.has-sub>a:before {
+#cssmenu.--resources>ul>li>ul>li>a{
+    /* text-decoration: none; */
+}
+#cssmenu.--resources ul > li.has-sub> a:before {
     position: absolute;
     right: 22px;
     top: 23px;
@@ -118,8 +123,11 @@ input:checked+label+.content {
 #cssmenu.--resources ul ul li a {
     background: gray;
     padding: 14px 22px;
+    -webkit-transition: color .2s ease;
+        -o-transition: color .2s ease;
+        transition: color .2s ease;
     font-size: 14px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 
@@ -131,6 +139,11 @@ input:checked+label+.content {
 
 #cssmenu.--resources ul ul>li.has-sub>a:before {
     top: 20px;
+    background: #dddddd;
+}
+#cssmenu.--resources ul ul>li.has-sub>a:after {
+    top: 16px;
+    right: 26px;
     background: #dddddd;
 }
 #cssmenu.--resources ul li ul li{
