@@ -4,12 +4,12 @@
 }
 
 #eventfocusSection {
-    height: 100vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('Images/Eachevents/upshift.png');
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), var(---backgroundImg);
     background-position: center;
     background-size: cover;
+    border: 1px solid transparent;
     box-shadow: 0px 4px 32.8px 10px rgba(0, 0, 0, 0.25);
-
 }
 
 .focusevent__text {
@@ -53,7 +53,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 40px;
     padding: 2rem 1rem;
-    margin: 12vh 12.5% 0 12.5%;
+    margin: 12vh 12.5% 2rem 12.5%;
 }
 
 /* ------------------------ */
