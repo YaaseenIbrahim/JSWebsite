@@ -1,20 +1,13 @@
 /* CSS for newspage */
 
 #main-news-section {
-    /* display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 7.5%;
-    gap: 1rem; */
     display: flex;
     gap: 1rem;
     margin: 4rem 7.5%;
 }
 
 .mainnews__image {
-    width: 30rem;
+    width: 35rem;
     object-fit: cover;
     object-position: center;
     border-radius: 20px;

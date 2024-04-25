@@ -20,7 +20,7 @@
             <img src="Images/Logos/New-logo-whitetext.png" alt="logo" class="banner__logo">
         </a>
         <div class="banner__linksholder ">
-            <a href="#" class="banner__links ">News</a>
+            <a href="newspage.html" class="banner__links ">News</a>
             <a href="events.html" class="banner__links">Events</a>
 
             <div class="dropdown">
@@ -67,7 +67,7 @@
                         class="sidemenu__logo noselect">
                 </a>
                 <div class="sidemenu__linksholder ">
-                    <a href="#" class="sidemenu__links ">News</a>
+                    <a href="newspage.html" class="sidemenu__links ">News</a>
                     <a href="events.html" class="sidemenu__links">Events</a>
                     <div id='cssmenu'>
                         <ul>
@@ -108,163 +108,226 @@
         </div>
     </nav>
     <section id="main-writing-section">
-        <img class="mainwriting__img" src="Images\student writing\main image.jpg" alt="main">
-        <div class="mainwriting__textcontainer">
-            <h2 class="mainwriting__title --capitalize">Is sleep really that important?</h2>
-            <p class="mainwriting__author">Adam Ibrahim 12C</p>
-            <p class="mainwriting__date">25 January 2024</p>
-            <br>
-            <p class="mainwriting__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illum molestias velit. Placeat,
-                doloribus qui voluptatibus sit tempore similique eveniet veniam eos fugit, quidem, itaque alias sapiente
-                aut ut nihil labore at impedit sed vitae a sint suscipit dolores necessitatibus!</p>
+        <img class="mainwriting__image" src="Images\student writing\main image.jpg"">
+        <div class=" mainwriting__textcontainer">
+        <div>
+            <p class="mainwriting__title --capitalize">Is sleep really that important?</p>
+            <div class="mainwriting__author-dateholder">
+                <p class="mainwriting__date">25 January 2024</p>
+                <li class="mainwriting__author">Adam Ibrahim 12C</li>
+            </div>
+        </div>
+        <p class="mainwriting__description">Quality sleep is essential for the body to repair and rejuvenate itself.
+            During sleep, the body undergoes processes such
+            as tissue repair, muscle growth, and the release of growth hormones. Chronic sleep deprivation can lead to a
+            weakened
+            immune system, increased risk of obesity, heart disease, diabetes, and other health issues. Sleep plays a
+            crucial role in mental health and cognitive function. It is during sleep that the brain consolidates
+            memories, processes emotions, and restores cognitive functions. Poor sleep quality or insufficient sleep can
+            contribute
+            to mood swings, irritability, anxiety, depression, and difficulty concentrating or making decisions.</p>
         </div>
     </section>
+
     <div class="line"></div>
 
-   
-    <div class="button-div">
-        <button class="middle-school  button">middle school</button>
-        <button class="lower-secondary button">lower secondary</button>
-        <button class="higher-secondary button">higher secondary</button>
-    </div>
-
-
-
-
-
-    <!-- start of featured writings heading -->
-    <div class="featured-writings-title-container">
-        <p class="featuredwritings__title">Featured Writings</p>
-    </div>
-    <div class="featuredwritings__underline"></div>
-    <!-- end of feature writings heading -->
-
-
-
-    <!-- cards under featured writings start -->
-    <section class="featuredcontainer">
-        <div class="featuredcontainer__card">
-            <img class="featuredcontainer__image" src="Images\student writing\card-2.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>memory of a goldfish?</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
-            </div>
+    <p class="writings__title">Featured Writings</p>
+    <section id="featured-writings-section">
+        <div class="writings__card featured__card">
+            <img class="card__image" src="Images\student writing\card-2.jpg" alt="">
+            <p class="card__title">memory of a goldfish?</p>
+            <p class="card__author">Mariyam Shabeena</p>
         </div>
 
-        <div class="featuredcontainer__card">
-            <img class="featuredcontainer__image" src="Images\student writing\card-1.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>How much do we know about the skies?</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
-            </div>
+        <div class="writings__card featured__card">
+            <img class="card__image" src="Images\student writing\card-1.jpg" alt="">
+            <p class="card__title">How much do we know about the skies in this planet of earth and mars?</p>
+            <p class="card__author">Mariyam Shabeena</p>
         </div>
 
-        <div class="featuredcontainer__card">
-            <img class="featuredcontainer__image" src="Images\student writing\card-3.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>Spiritual effect of tea</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
-            </div>
+        <div class="writings__card featured__card">
+            <img class="card__image" src="Images\student writing\card-3.jpg" alt="">
+            <p class="card__title">Spiritual effect of tea</p>
+            <p class="card__author">Mariyam Shabeena</p>
         </div>
 
-        <div class="featuredcontainer__card">
-            <img class="featuredcontainer__image" src="Images\student writing\card-4.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>Spiritual effect of tea</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
-            </div>
+        <div class="writings__card featured__card">
+            <img class="card__image" src="Images\student writing\card-4.jpg" alt="">
+            <p class="card__title">Spiritual effect of tea</p>
+            <p class="card__author">Mariyam Shabeena</p>
+
         </div>
     </section>
 
+    <div class="line"></div>
 
-    <!-- start of recent works heading -->
-    <div class="recent-works-container">
-        <p class="recent-works">Recent Works</p>
-    </div>
-    <div class="recent-works-underline"></div>
-    <!-- end of recent works -->
-
-
-
-
-
-
-    <!-- start / used css from featured cards, hence all the classes are similar -->
-    <div class="recent-works-section">
-
-
-        <div class="recentworks__card">
-            <img class="featuredcontainer__image" src="Images\student writing\1.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>Benefits of road trips</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
+    <section id="latest-writings-section">
+        <div class="writings__title latestwritings__title">Latest Writings</div>
+        <div class="latestwritings__filtercontainer">
+            <div class="buttons-settings__container">
+                <div class="filter__title">Filter:</div>
+                <div class="filter__button ---middle-school">Middle School</div>
+                <div class="filter__button ---lower-secondary">Lower Secondary</div>
+                <div class="filter__button ---higher-secondary">Higher Secondary</div>
+                <img src="Images/Icon svgs/Filter.svg" alt="Filter" class="filter__settings">
+            </div>
+            <div class="flex-parent">
+                <input type="search" class="filter__searchbar" placeholder="Search...">
+                <img src="Images/Icon svgs/Filter.svg" alt="Filter" class="filter__settings --mobile">
             </div>
         </div>
 
-        <div class="recentworks__card">
-            <img class="featuredcontainer__image" src="Images\student writing\2.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>The art of photography</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
+        <div id="latestwritingcards__container">
+
+            <div class="writings__card latestwritings__card">
+                <img class="card__image" src="Images\student writing\1.jpg" alt="">
+                <div class="card__title">
+                    Benefits of road trips</div>
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+
+            <div class="writings__card latestwritings__card">
+                <img class="card__image" src="Images\student writing\2.jpg" alt="">
+                <div class="card__title">
+                    The art of photography</div>
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+
+            <div class="writings__card latestwritings__card">
+                <img class="card__image" src="Images\student writing\3.jpg" alt="">
+                <div class="card__title">
+                    When life gives you lemons</div>
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+
+            <div class="writings__card latestwritings__card">
+                <img class="card__image" src="Images\student writing\4.jpg" alt="">
+                <div class="card__title">
+                    Bizarre houses</div>
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+
+            <div class="writings__card latestwritings__card">
+                <img class="card__image" src="Images\student writing\5.jpg" alt="">
+                <div class="card__title">
+                    All about wheels</div>
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+
+            <div class="writings__card latestwritings__card">
+                <img class="card__image" src="Images\student writing\6.jpg" alt="">
+                <div class="card__title">
+                    The magic in windows</div>
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+
+            <div class="writings__card latestwritings__card">
+                <img class="card__image" src="Images\student writing\7.jpg" alt="">
+                <div class="card__title">
+                    The ladybug world</div>
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+
+            <div class="writings__card latestwritings__card">
+                <img class="card__image" src="Images\student writing\8.jpg" alt="">
+                <div class="card__title">
+                    In a field of dandilions</div>
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 
+    <section id="latest-writings-section">
+        <p class="latestwritings__title">Latest Writings</p>
+
+        <div class="filterbuttons-settings__container">
+            <div class="filter__title allfilteritems">Filter:</div>
+            <div class="filter__button allfilteritems noselect ---middle-school  ">middle school</div>
+            <div class="filter__button allfilteritems noselect ---lower-secondary ">lower secondary</div>
+            <div class="filter__button allfilteritems noselect ---higher-secondary ">higher secondary</div>
+            <div>
+                <img src="Images/Icon svgs/Filter.svg" alt="Settings" class="filter__settings">
+            </div>
+            <div>
+                <input type="search" class="latestwritings__searchbar allfilteritems" placeholder="Search...">
             </div>
         </div>
 
 
-        <div class="recentworks__card">
-            <img class="featuredcontainer__image" src="Images\student writing\3.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>When life gives you lemons</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
+
+        <div class="writings__card latestwritings__card">
+            <img class="card__image" src="Images\student writing\1.jpg" alt="">
+            <div class="card__title">
+            Benefits of road trips
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+        </div>
+
+        <div class="writings__card latestwritings__card">
+            <img class="card__image" src="Images\student writing\2.jpg" alt="">
+            <div class="card__title">
+            The art of photography
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+        </div>
+
+
+        <div class="writings__card latestwritings__card">
+            <img class="card__image" src="Images\student writing\3.jpg" alt="">
+            <div class="card__title">
+            When life gives you lemons
+                <p class="card__author">Mariyam Shabeena</p>
             </div>
         </div>
 
 
 
-        <div class="recentworks__card">
-            <img class="featuredcontainer__image" src="Images\student writing\4.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>Bizarre houses</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
+        <div class="writings__card latestwritings__card">
+            <img class="card__image" src="Images\student writing\4.jpg" alt="">
+            <div class="card__title">
+            Bizarre houses
+                <p class="card__author">Mariyam Shabeena</p>
             </div>
         </div>
 
-        <div class="recentworks__card">
-            <img class="featuredcontainer__image" src="Images\student writing\5.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>All about wheels</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
-            </div>
-        </div>
-
-
-        <div class="recentworks__card">
-            <img class="featuredcontainer__image" src="Images\student writing\6.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>The magic in windows</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
+        <div class="writings__card latestwritings__card">
+            <img class="card__image" src="Images\student writing\5.jpg" alt="">
+            <div class="card__title">
+            All about wheels
+                <p class="card__author">Mariyam Shabeena</p>
             </div>
         </div>
 
 
-        <div class="recentworks__card">
-            <img class="featuredcontainer__image" src="Images\student writing\7.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>The ladybug world</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
-            </div>
-        </div>
-
-        <div class="recentworks__card">
-            <img class="featuredcontainer__image" src="Images\student writing\8.jpg" alt="">
-            <div class="featuredcontainer__title">
-                <h3>In a field of dandilions</h3>
-                <p class="featuredcontainer__author">Mariyam Shabeena</p>
+        <div class="writings__card latestwritings__card">
+            <img class="card__image" src="Images\student writing\6.jpg" alt="">
+            <div class="card__title">
+            The magic in windows
+                <p class="card__author">Mariyam Shabeena</p>
             </div>
         </div>
 
 
+        <div class="writings__card latestwritings__card">
+            <img class="card__image" src="Images\student writing\7.jpg" alt="">
+            <div class="card__title">
+            The ladybug world
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+        </div>
 
-    </div>
+        <div class="writings__card latestwritings__card">
+            <img class="card__image" src="Images\student writing\8.jpg" alt="">
+            <div class="card__title">
+            In a field of dandilions
+                <p class="card__author">Mariyam Shabeena</p>
+            </div>
+        </div>
+
+
+    </section> -->
     <footer id="footer">
         <div class="footer__line"></div>
         <p class="footer__title">Contact Us:</p>
@@ -281,7 +344,7 @@
         </div>
         <div class="additionallinks__holder">
             <div class="link__group flex-parent-col">
-                <a href="#" class="footer__link">News</a>
+                <a href="newspage.html" class="footer__link">News</a>
                 <a href="events.html" class="footer__link">Events</a>
                 <a href="resources.html" class="footer__link">Resources</a>
 

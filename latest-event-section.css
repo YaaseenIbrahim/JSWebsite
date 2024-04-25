@@ -82,13 +82,6 @@
     margin-top: -1px;
 }
 
-.searchbar__defaulttext {
-    font-family: Outfit Light;
-}
-
-.searchbar__icon {
-    float: right;
-}
 
 .allevents__container {
     display: grid;
@@ -355,7 +348,7 @@
     .allevents__container {
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
-        gap: 30px;
+        gap: 20px;
         margin: 3rem 30px 10px 30px;
     }
 

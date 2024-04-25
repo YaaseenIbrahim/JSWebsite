@@ -1,13 +1,13 @@
 /* CSS file to define colors */
 
-:root{
-    ---lightred:#FFDBD9;
+:root {
+    ---lightred: #FFDBD9;
     ---nicegreen: #7BDAA1;
     ---finished: #8fff8f;
     ---upcoming: #ff8f8f;
     ---ongoing: #FCE07C;
     ---linegray: #808080;
     ---lightlinegray: #BFBFBF;
----reddishgray: #ebe3e2;
+    ---reddishgray: #ebe3e2;
+        ---brown:#351e00;
 }
-
